@@ -1,20 +1,26 @@
 'use client';
 
-import ChapterCard from '@/components/ChapterCard';
-import ExamCreator from '@/components/exam/ExamCreator';
-import ExamGameForm from '@/components/exam/ExamGameForm';
 import PageContainer from '@/components/PageContainer';
+import QuestionsTable from '@/components/QuestionsTable';
+import QuizCreator from '@/components/quiz/QuizCreator';
+import QuizGameForm from '@/components/quiz/QuizGameForm';
 import Navbar from '@/components/Navbar';
 import { Toaster } from '@/components/ui/Toaster';
 import { ToastAction } from '@/components/ui/Toast';
 
 import { useQuestionPool } from '@/lib/context/QuestionPoolProvider';
-import { QuestionType as Question } from '@/lib/types/Database.types';
-
-import { useToast } from '@/components/ui/use-toast';
 import { useState } from 'react';
 
-export default function Home() {
+import { QuestionType as Question } from '@/lib/types/Database.types';
+import { useToast } from '@/components/ui/use-toast';
+
+type CategoryPageParams = {
+  params: {
+    category: string;
+  };
+};
+
+export default function CategoryPage({ params }: CategoryPageParams) {
   const { questionPool, categories } = useQuestionPool();
   const { toast } = useToast();
 
@@ -26,11 +32,23 @@ export default function Home() {
     return <PageContainer>Loading...</PageContainer>;
   }
 
-  const maxQuestions = questionPool.length;
+  const maxQuestions =
+    questionPool?.filter((question) => question.category === params.category)
+      .length || 0;
+
+  const category = categories.find(
+    (category) => category.id === params.category
+  );
+
+  if (!category) {
+    return <PageContainer>Category not found</PageContainer>;
+  }
+
+  const filteredQuestions = questionPool.filter(
+    (question) => question.category === params.category
+  );
 
   const createQuiz = () => {
-    const allQuestions = questionPool;
-
     if (questionAmount < 1) {
       return toast({
         variant: 'destructive',
@@ -40,7 +58,7 @@ export default function Home() {
       });
     }
 
-    const shuffled = allQuestions.sort(() => Math.random() - 0.5);
+    const shuffled = filteredQuestions.sort(() => Math.random() - 0.5);
     const quiz = shuffled.slice(0, questionAmount);
 
     setQuiz(quiz);
@@ -52,41 +70,25 @@ export default function Home() {
       {!quizStarted && <Navbar />}
 
       <PageContainer>
-        <ExamCreator
+        <QuizCreator
           maxQuestions={maxQuestions}
+          category={category}
           amount={questionAmount}
           setAmount={setQuestionAmount}
           createQuiz={createQuiz}
           quizStarted={quizStarted}
         />
 
-        {quizStarted ? (
-          <ExamGameForm questions={quiz} />
-        ) : (
-          <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((category, index) => {
-              const questionAmount = questionPool.filter(
-                (question) => question.category === category.id
-              ).length;
-
-              return (
-                <ChapterCard
-                  key={category.id}
-                  props={{
-                    id: category.id,
-                    index: index + 1,
-                    title: category.title,
-                    history: category.history,
-                    questionAmount: questionAmount,
-                  }}
-                />
-              );
-            })}
-          </div>
-        )}
-
-        <Toaster />
+        <div className="mt-10">
+          {quizStarted ? (
+            <QuizGameForm questions={quiz} />
+          ) : (
+            <QuestionsTable questions={filteredQuestions} params={params} />
+          )}
+        </div>
       </PageContainer>
+
+      <Toaster />
     </>
   );
 }

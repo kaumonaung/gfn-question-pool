@@ -1,0 +1,139 @@
+[
+  {
+    "id": "43b1c42a-6b17-41fb-ad4c-95ea20f953a2",
+    "category": "object-oriented-programming",
+    "question": "Welche Aussage(n) zu Objekten und Klassen in der objektorientierten Programmierung sind zutreffend?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Objekte mit ähnlichen Eigenschaften werden einer Klasse zugeordnet.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Ein Objekt ist die Instanziierung einer Klasse.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Die Begriffe Klasse und Objekt können synonym verwendet werden.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Klassen sind wie ein Bauplan für Objekte.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "88b93a2d-aeec-4398-a1d0-1d11b09db16b",
+    "category": "object-oriented-programming",
+    "question": "Welche Aussage(n) zu Funktionen sind zutreffend?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Der this-Kontext einer Methode bezieht sich auf die zugehörige Objektinstanz.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Methoden sind anders als Funktionen in jeder Datei verfügbar.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Methoden sind Funktionen, die nur über eine Objektinstanz aufgerufen werden können.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Methoden geben immer das zugehörige Objekt zurück.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "fdad0d5f-1d3e-42f9-a583-aaab853f49a7",
+    "category": "object-oriented-programming",
+    "question": "Welche Aussagen zur Konvertierung von funktionaler und objektorientierter Programmierung sind zutreffend?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Jedes funktionale Programm lässt sich in ein objektorientiertes Programm überführen.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Jedes objektorientierte Programm lässt sich in ein funktionales Programm überführen.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Objektorientierte Programme lassen sich in funktionale Programme überführen, funktionale Programme aber nicht in objektorientierte.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Funktionale Programme lassen sich in objektorientierte Programme überführen, objektorientierte Programme aber nicht in funktionale.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "dcaac29d-c2bc-46e0-b4f2-00c70a160d6b",
+    "category": "javascript-basics-part1",
+    "question": "Welche der folgenden Aussagen sind richtig?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "JavaScript wird häufig als Textauszeichnungssprache eingesetzt.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "JavaScript kann auf Client und Server eingesetzt werden.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Mit JavaScript lassen sich Roboter steuern.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Die Bildbearbeitungssoftware Adobe Photoshop kann mit JavaScript gescriptet werden.",
+        "isCorrect": true
+      },
+      {
+        "id": 5,
+        "answerText": "JavaScript läuft nur im Browser.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  }
+]
