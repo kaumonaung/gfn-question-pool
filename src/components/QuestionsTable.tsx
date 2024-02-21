@@ -34,7 +34,10 @@ const QuestionsTable = ({
       <TableBody>
         {questions.map((question) => (
           <TableRow key={question.id}>
-            <TableCell className="font-medium">{question.question}</TableCell>
+            <TableCell
+              className="font-medium"
+              dangerouslySetInnerHTML={{ __html: question.question }}
+            />
             <TableCell className="text-center text-emerald-800 dark:text-emerald-500">
               {question.meta.timesCorrect}
             </TableCell>

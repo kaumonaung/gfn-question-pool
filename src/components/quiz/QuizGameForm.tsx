@@ -188,9 +188,10 @@ const QuizGameForm = ({ questions }: QuizGameFormProps) => {
       ) : (
         <>
           <Card>
-            <h1 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong mt-2">
-              {questionTitle}
-            </h1>
+            <h1
+              className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong mt-2"
+              dangerouslySetInnerHTML={{ __html: questionTitle }}
+            />
 
             <div className="mt-6 flex flex-col gap-4">
               {questionAnswers?.map((answer) => {
@@ -226,9 +227,10 @@ const QuizGameForm = ({ questions }: QuizGameFormProps) => {
                       handleAnswerClick(id, answer.isCorrect);
                     }}
                   >
-                    <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong whitespace-pre-wrap font-medium">
-                      {answerText}
-                    </p>
+                    <p
+                      className="text-tremor-content-strong dark:text-dark-tremor-content-strong whitespace-pre-wrap font-medium"
+                      dangerouslySetInnerHTML={{ __html: answerText }}
+                    />
                   </Card>
                 );
               })}

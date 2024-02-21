@@ -1,5 +1,3122 @@
 [
   {
+    "id": "dcaac29d-c2bc-46e0-b4f2-00c70a160d6b",
+    "category": "javascript-basics-part1",
+    "question": "Welche der folgenden Aussagen sind richtig?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "JavaScript wird häufig als Textauszeichnungssprache eingesetzt.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "JavaScript kann auf Client und Server eingesetzt werden.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Mit JavaScript lassen sich Roboter steuern.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Die Bildbearbeitungssoftware Adobe Photoshop kann mit JavaScript gescriptet werden.",
+        "isCorrect": true
+      },
+      {
+        "id": 5,
+        "answerText": "JavaScript läuft nur im Browser.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "4463fcde-3130-44ca-83a5-5803dee33c53",
+    "category": "javascript-basics-part1",
+    "question": "Wie versetzt du JS in den strikten Modus?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Durch den Aufruf der Funktion <code>useStrict()</code> am Anfang des Codes.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Durch <code>'use strict'</code> am Anfang des Codes.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Durch <code>'strict'</code> am Anfang des Codes.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Starte Chrome mit der Kommandozeilen-Option <code>--strict.</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "Wähle strict mode aus dem Developer-Menü des Browsers.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "9d797151-9bce-4fcb-8784-50baa00a7765",
+    "category": "javascript-basics-part1",
+    "question": "Welche der folgenden Zeilen sind syntaktisch korrekt?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>console.log 'Hello'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>console.log 'Hello';</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>console.log(\"Hello\")</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<code>console.log('Hello')</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c56002e9-b9fb-4095-8b68-2a58a9d72266",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>typeof typeof 42</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "object",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c90655a8-dc63-4d5a-b346-0b1566bd5ada",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'Hello'.length</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "5",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "6",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "4",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "39691102-2848-464e-ab9f-1b076e88af08",
+    "category": "javascript-basics-part1",
+    "question": "Markiere gültige Literale.",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>\" ' \"</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>3 * 5</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>'3 * 5'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<code>'Hello'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 5,
+        "answerText": "<code>\"Hello\".length</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "6aeb448e-16a8-4082-9166-401ac85cf85a",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts des folgenden Ausdrucks: <code>'3 * 4'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "object",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "fc2a22bd-dd8a-43ec-a7fe-d43695da52f3",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>typeof '1 + 2'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "operator",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "literal",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "3b9daa92-f4ac-48dd-b0e9-677619b7e8dc",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts des folgenden Ausdrucks: <code>'1 + 2'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "operator",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "literal",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "400b1a22-bd42-4377-9703-e8b8b39ca265",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'123'.length</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "3",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "operator",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "60785b07-f57b-4519-8d11-a3c1ddb0cc2e",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Wert des folgenden Ausdrucks: <code>2 + 3 / 2 + 3</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "6.5",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "1",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Der Ausdruck ist syntaktisch falsch.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "6",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e7e45b57-5b57-48a4-953b-05e91b8ce01a",
+    "category": "javascript-basics-part1",
+    "question": "Der Wert der Variablen <code>laenge</code> soll auf das Doppelte erhöht werden. Welche Anweisung ermöglicht das?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>laenge = laenge ** 2</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>laenge += laenge</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>laenge *= 2</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<code>laenge += 2</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "7d0b1ac0-0104-4ee5-8458-78eab353991c",
+    "category": "javascript-basics-part1",
+    "question": "Eine geplante einstündige Beratung dauert insgesamt 85 Minuten. Wie ermittelst du, wie viele Minuten die Beratung überzogen wurde?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>let dauer = 85\nlet restMinuten = dauer % 60</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>let dauer = 85\nlet restMinuten = dauer * 60</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>let dauer = 85\nlet restMinuten = dauer / 60</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>let dauer = 85\nlet restMinuten = dauer - 60</pre>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "f8f5c7f1-c1a8-4a79-91e5-79612184f78a",
+    "category": "javascript-basics-part1",
+    "question": "Als was bezeichnet man den Teil <code>a = 3 + b</code> in folgender Codezeile: <code>let a = 3 + b</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Variablendefinition",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Bezeichner",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Ausdruck",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Schlüsselwort",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "Zuweisung",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c35ecb0e-48d8-4583-8f47-a707a1469532",
+    "category": "javascript-basics-part1",
+    "question": "Als was bezeichnet man <code>let</code> in folgender Codezeile: <code>let a = 3 + b</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Schlüsselwort",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Ausdruck",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Bezeichner",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Zuweisung",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "Variablendefinition",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "4e43119c-d2ab-437d-b9a8-7ad61c5b680e",
+    "category": "javascript-basics-part1",
+    "question": "Welches ist die typischerweise zu verwendende Schreibweise für Variablenbezeichner in JavaScript?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "wegLaenge",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "WegLaenge",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "weg_Laenge",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "WEG_LAENGE",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "WEGLAENGE",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a20592c5-3217-4c30-98e8-353a80ad7d35",
+    "category": "javascript-basics-part1",
+    "question": "Welche der folgenden Aussagen sind richtig?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Du solltest immer Abkürzungen verwenden, um den Code kompakter zu gestalten.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Gebräuchliche Abkürzungen zu verwenden kann sinnvoll sein.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Bezeichner sind in JavaScript case-sensitive.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Abkürzungen sind verboten.",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "Bezeichner sind in JavaScript case-insensitive.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "3ee0ea08-24c8-44e1-a946-71c2d878532a",
+    "category": "javascript-basics-part1",
+    "question": "Gib <code>C:\\files</code> in der Browser-Konsole aus.",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>console.log('C:\\files')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>console.log(`C:\\\\files`)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>console.log(\"C:\\\\files\")</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<code>console.log(\"C:\\files\")</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "<code>console.log('C:\\\\files')</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "832bcd3a-b1c1-44d4-9e86-db28fa66f972",
+    "category": "javascript-basics-part1",
+    "question": "Welche Ausgabe erzeugt die folgende Anweisung? <code>console.log(`${10 + 1}`)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>${10 + 1}</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>11</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Keine! Es erscheint eine Fehlermeldung.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>101</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "72eade64-b2db-428c-8dd1-558169242ed0",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts des folgenden Ausdrucks: <code>'3' + '4'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "NaN",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "4d7dbba6-1221-4cac-9fac-f0721481889b",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert liefert folgender Ausdruck? <code>('is' + 3) * 7</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "NaN",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "78eef4e3-0277-46a1-a163-eeba4aa95c2a",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>`${3 * 4}`</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "12",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "'12'",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "string",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "f6796d52-4c50-4644-a71e-7ea62005eb73",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>'10' / 'Hallo'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "NaN",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "number",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "40d7ff91-28c0-4607-b43a-9b572a2c87dc",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>'3 * 4'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "'12'",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "12",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "8ef6b4cf-5da2-478e-8eb0-dc971500b44b",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert: <code>'9' / '2'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "4.5",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "NaN",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "'4.5'",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "string",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e6415b9b-83c3-4ea1-9ebd-4a0e35dff621",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>3 + 4</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "7",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "number",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "1038c794-171f-43ff-8ca8-a76e1d8bc96a",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts des folgenden Ausdrucks: <code>'3' * '4'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "12",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "7",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "1be7ac93-04ff-4c39-90be-aa4b5005be95",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert liefert folgender Ausdruck?: <code>'is' + 3 * 7</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "NaN",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "is21",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "'is21'",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "5c8c8464-f3ec-4a49-9c53-d5fcd2fef926",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck?: <code>'4' + 5</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "9",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "45",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "'45''",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "string",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "5b8d4045-cef9-4c02-9a03-5c09f852f0c3",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>'10' / 2</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "5",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "'5'",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d78bec10-21fb-40dd-a27b-d370af524b50",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>Number('Nothing')</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "NaN",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "undefined",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "string",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "599c42c9-a55a-458d-84e8-fb5dc82ecb12",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck?: <code>'10' + 5</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "'105''",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "105",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "NaN",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "be904cf4-d4cc-4c1b-b944-53090638c087",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>'3' + '4'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "7",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "'34'",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "string",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "cf66b03f-8f3c-4fa3-8a7d-70e94ae5947c",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>3 * '4Hallo'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "NaN",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "12Hallo",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "'34Hallo'",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "ed499faa-615a-4e01-90ce-75005b1e4511",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>'Alle' / 'Einen'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "NaN",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "number",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "'Alle/Einen'",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "736eda1a-1dd2-4efe-81c8-97e01b02efdc",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert: <code>'9 CPUs' / '2 CPUs'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "NaN",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "'9 CPUs / 2 CPUs'",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "10fde381-271d-45ff-a029-05fc375d6077",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>Number(Number(10))</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "10",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "number",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "NaN",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "17fa18cd-8251-40d2-a308-562229fbbda9",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Datentyp des Rückgabewerts: <code>'Hello' * 'World'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "NaN",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "46e4f3b4-1cad-42fe-b4d1-8c17040e9b71",
+    "category": "javascript-basics-part1",
+    "question": "Mit welchem JavaScript-Code berechnest du die 2. Wurzel (Quadratwurzel) von 7 und rundest das Ergebnis auf 5 Stellen nach dem Komma?\n\n",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>Math.sqrt(7).toFixed(5)</code>\n",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>sqrt(7).comma(5)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>Math.sqrt(7).roundTo(5)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>math.sqrt(7).toFixed(5)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "ccf39c8b-2cd2-4714-b040-362a25c18cca",
+    "category": "javascript-basics-part1",
+    "question": "Beim modernen europäischen Roulette gibt es die Zahlen von 1 bis 36 und die 0. Entwickle einen Zufallsgenerator, der das Roulette simuliert.\n",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>Math.floor(Math.random() * 37) + 0</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>Math.floor(math.random() * 36) + 0</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>Math.floor(Math.random() * 37) + 1</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>Math.floor(math.random() * 36) + 1</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "f231dd64-2e1f-4720-87a0-8c03dda316b2",
+    "category": "javascript-basics-part1",
+    "question": "Mit welchem JavaScript-Code berechnest du <code>1.7</code> hoch <code>4</code> und rundest das Ergebnis auf 3 Stellen nach dem Komma?\n",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>Math.pow(1.7, 4).toFixed(3)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>Math.pow(1.7).Math.pow(4).toFixed(3)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>Math.pow(4, 1.7).toFixed(3)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "7d84d4a1-57ca-4bed-a4a9-e37c2765d9c7",
+    "category": "javascript-basics-part1",
+    "question": "<code>Math</code> bezeichnet man in JavaScript als\n",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Function",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Object",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Konstante",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Variable",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "String",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "fd14a930-eeb3-4e7c-a407-a5b971d1632b",
+    "category": "javascript-basics-part1",
+    "question": "Bei Lotto werden Zahlen von 1 bis 49 verwendet. Entwickle einen passenden Zufallsgenerator.",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>Math.floor(Math.random() * 49) + 1</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>Math.floor(Math.random() * 50) + 0</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>Math.floor(Math.random() * 48) + 1</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "9e4cad19-395c-474b-a680-0ca2a9f0db4c",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>'Computer' === 'Probleme'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "6737366b-b730-4e76-ab26-f7038cb5428f",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>19 >= 19</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e2956494-b9ae-42e1-8863-8fa0bd0c3307",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>19 >= 19.2</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "10abd1d4-82d1-497f-a3d4-7af348f9b59a",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>5 * 7 === 36 - 1</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "69e578ee-39cb-46eb-b05f-ac15412a1377",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>3 + 3 !== 2 * 3</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "609da629-d099-4d7a-8ea0-52cf72f207e4",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>'42' === 42</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "fe82efb2-3a01-4bda-9e0f-3a19669e133a",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>'42' + 1 === 43</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "cedb3ed1-29bb-4285-a596-95e95546d829",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>'2' * '4' === Number(17 / 2)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c2d2f0b3-0c60-4327-b529-a55c8e8f6370",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>'42' === 'zweiundvierzig'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "6c10f18a-a715-4238-bd8e-e4a066b6ec49",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>isNaN('3' + '4')</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "4b362499-df61-462d-b61c-c1da97c0f39f",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>'zwei' < 'drei'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c9c5bf5f-4f27-4ab0-a8a7-d2799762ae25",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>'seven' < 'nine'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "2c1a176f-9802-41ec-b39c-8732085c4ae4",
+    "category": "javascript-basics-part1",
+    "question": "Welchen Rückgabewert hat der folgende Ausdruck? <code>'nine' < 'seven'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "6e38ec95-25fe-4411-b147-8f3c43d099cc",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>'is' + (3 < 7)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'istrue'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c9f47236-48b4-46c1-be19-b103fba27628",
+    "category": "javascript-basics-part1",
+    "question": "Schreibe folgenden Code um, sodass kein if oder if-else mehr benötigt wird: <pre>let isAccessGrantedText\n\nif (password === '123456') {\n   isAccessGrantedText = 'yes'\n} else {\n   isAccessGrantedText = 'no'\n}</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>let isAccessGranted = password === '123456' ? 'yes' : 'no'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>let isAccessGranted = password === '123456' ? 'no' : 'yes'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>let isAccessGranted = password === 123456 ? 'yes' : 'no'</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c1e2bd5e-77c2-41dd-bc4d-3345b7540f5b",
+    "category": "javascript-basics-part1",
+    "question": "Schreibe folgenden Code um, sodass kein if oder if-else mehr benötigt wird: <pre>let isAccessGrantedText\n\nif (password === 'secret') {\n   isAccessGrantedText = 'yes'\n} else {\n   isAccessGrantedText = 'no'\n}</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>let isAccessGranted = password === 'secret' ? 'yes' : 'no'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>let isAccessGranted = password === 'secret' ? 'no' : 'yes'</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c171326d-af32-41bb-914c-b1dd67e3d360",
+    "category": "javascript-basics-part1",
+    "question": "Welche der folgenden Codezeilen verwenden die korrekte Syntax der If-Anweisung?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>if (a > 1) { a = a - 1 }</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>if (a > 1) { a -= 1 }</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>if a > 1   { a = a - 1 }</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>if {a > 1} { a -= 1 }</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "<code>if a > 1   { a -= 1 }</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 6,
+        "answerText": "<code>if {a > 1} { a = a - 1 }</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "4ec87642-84b7-49ef-8997-ef36390d98ea",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>'Zahl' || 'Wort'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'Zahl'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'Wort'</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "3b070304-6a86-4d5f-89c3-1bbb1a6645cd",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false || 'Zahl'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'Zahl'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "03635cfa-7821-44d4-82b9-d34354b116ea",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>'Zahl' || false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'Zahl'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a3665707-d4fc-470f-b00f-5c6eff97a47f",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>'' || false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>''</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "5d36c1de-1ce2-49bd-ade1-21118f91e93a",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false || ''</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>''</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "09eeeb4a-4648-41bb-80ee-01a9789d7b3a",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false && (true || false)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "126d0ba8-5b7a-4a45-89b1-b10cbdaa8915",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>true && (false || false)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "bf8f113b-7ad2-4f55-8ae4-0a3469eb9c06",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>true && (true || false)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "10654947-6cbb-4a61-b6b0-4e1193aabdda",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false && (false || true)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "b991c3ca-53b9-4b91-9562-45c8af9fd3cf",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false && (true || true)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "9ce6620d-056e-407d-a8be-334caba45627",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>true && (false || true)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "cd9daeb3-e44c-4b54-b253-a0c5815f02d4",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false || false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "1ddf8365-b0d6-4905-8123-cc33f793a905",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false || true</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e65749b5-7412-4398-be5d-684cef66f6d4",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>true || false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "53882044-4aa4-4fb1-94d9-7a52e1041913",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>true || true</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "5b586544-a612-4fd9-b247-ad40f848e79f",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert folgender Ausdrücke: <code>!(6 < 7)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "1a8ed3a9-c9ee-462a-934a-817e310f611e",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert folgender Ausdrücke: <code>'HALLO' < 'hallo' && Math.floor(1.1) === 1</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "40e6bf0e-b750-4b8b-ba13-582f7844f53e",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert folgender Ausdrücke: <code>3 * 2 === 3 + 2 || 'a' !== 'b'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a8d90b34-45ab-43ce-8a4f-d3470cafa325",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false && false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "5ea08a12-b48f-4edf-bb67-d85ec13369ef",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>false && true</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "3d5f2c8a-f010-4f7c-8a48-1687626128b6",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>true && false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "260fd1e1-a501-416f-92ea-98a0b75608ab",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>true && true</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a4156b01-7bb0-4ae9-8894-5971e73af4ef",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>4 < 3 || ('a' != 'b' && Math.ceil(1.1) === 2)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c857b45d-a1dc-4e21-b23b-bdc7186d2ac0",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'Zahl' && 'Wort'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'Zahl'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'Wort'</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "3d46f150-3ba8-4d36-a29c-871453fb4d83",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>false && 'Zahl'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'Zahl'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c067cde2-ae8c-4494-bd10-65296af46112",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'Zahl' && false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'Zahl'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "dc0c924e-4e65-4822-8010-6f121858b6e7",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'' && false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>''</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e79fb4ee-66d6-4833-81b7-54c667c0890c",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>false && ''</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>''</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "8443cb13-a76b-4806-82ab-7cc8ff3aabbf",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>!(4 < 3)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e2881d18-83b1-45db-a214-876112ba4d55",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'a' < 'b' && Math.ceil(1.1) === 2</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "14e7759c-5b84-4b8b-b2cb-1a2d067fd23a",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>3 * 2 === 3 + 3 || 'x' === 'y'</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "cae54561-4b3f-4761-896b-9b8f12eac4ac",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>'Hello Goldy'.includes('old' + 'y')</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e211e85d-a3f8-486f-9ba4-ffa656b32d08",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>'Hello Goldy'.substr(0,1).toLowerCase()</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'h'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'e'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>''</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "cff1ce55-8431-4df1-9300-0c37b483b337",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>'Hello Goldy'.charAt(1).repeat(3)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'eee'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'HHH'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>''</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e5e46fce-8c95-4e70-8984-1631213f43e0",
+    "category": "javascript-basics-part1",
+    "question": "Welches Ergebnis liefert folgender Ausdruck? <code>'Hello Goldy'.lastIndexOf('l')</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "8",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "9",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "7",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "942dafea-3985-4199-97e8-262109e5d236",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'some string'.substr(3, 2).length</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "2",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "3",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "1",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "8f716b63-d3ff-45c5-803c-c3f26e97cfaf",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'Ladislaus'.includes('ad' + 'i' + 's')</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c03f4cc7-a24b-4dbd-a2e6-f3f60ad173f8",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'Ladislaus'.substr(1,2).toUpperCase()</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'AD'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'LA'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>'DI'</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "ee1ddf83-1253-452b-ace7-818191446c05",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'Ladislaus'.charAt(3).repeat(1)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'i'</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'d'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>'s'</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "28fad003-529d-4f56-b07f-0b627a55a38e",
+    "category": "javascript-basics-part1",
+    "question": "Bestimme den Rückgabewert des folgenden Ausdrucks: <code>'this is a short text'.substr(4, 5).trim().length</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "4",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "5",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "3",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "419cb17d-723c-4fc6-b63f-5e11dc5d365f",
+    "category": "javascript-basics-part1",
+    "question": "Ergänze den folgenden regulären Ausdruck, sodass nur Nutzernamen gültig sind, welche aus Kleinbuchstaben und Sonderzeichen außer dem <code>#</code> bestehen. Zudem sollen nur Nutzernamen mit einer Mindestlänge von 5 Zeichen akzeptiert werden.\n<code>[ #\\d - ]{ }</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>[^#\\dA-Z]{5,}</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>[,#\\da-z]{5,}</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>[^#\\dA-Z]{6,}</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "382852b0-555c-4209-822b-345f72aa6d58",
+    "category": "javascript-basics-part1",
+    "question": "Untersuche die folgenden Strings auf korrekte Entsprechung zum regulären Ausdruck. Welche/r ist/sind richtig?\n<code>^[a-z][\\w]*@[\\w]+.[a-z]+$</code>",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>max23mustermann@mail12.com</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>max.mustermann@mail.com</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>max-mustermann@mail.com</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>maxmustermann@mail.com</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "f695b196-0c41-4730-8e99-da560bda61a9",
+    "category": "javascript-basics-part1",
+    "question": "Untersuche die folgenden Strings auf vollständige korrekte Entsprechung zum regulären Ausdruck. Welche/r ist/sind richtig?\n<code>/[a-z0-9]{3,}/g</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "JAVASCRIPT",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "javascript",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "ES6",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "JavaScript",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a40e85fd-87fd-4ced-b55a-8ab98798be48",
+    "category": "javascript-basics-part1",
+    "question": "Schreibe eine Funktion <code>logProduct</code> in der Arrow-Notation, die <code>a</code> als ersten Parameter und <code>b</code> als zweiten Parameter entgegennimmt und ihr Produkt in der Konsole ausgibt:",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>let logProduct = (a, b) => console.log(a * b)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>let logProduct = (A, B) => console.log(a * b)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>let logProduct = (a, b) ==> console.log(a * b)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>let logProduct = (a, b) => {\nreturn console.log(a * b)\n}</pre>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "8452b408-f8d8-48a4-abe4-0e61a6564ace",
+    "category": "javascript-basics-part1",
+    "question": "Schreibe eine Funktion <code>greetMeByName</code> in der Arrow-Notation, die <code>greeting</code> als ersten Parameter und <code>name</code> als zweiten Parameter entgegennimmt und eine Begrüßung in der Konsole ausgibt.\nBeispielaufruf: <code>greetMeByName('Hello', 'Steve')</code>.\nBeispielausgabe: \"Hallo Steve!\"",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>const greetMeByName = (greeting, name) => console.log(`${greeting} ${name}!`)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>const greetMeByName = (greeting, name) => console.log(`${Greeting} ${Name}!`)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>const greetMeByName = (greeting, name) => {\nreturn console.log(`${greeting} ${name}!`)\n}</pre>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "7bd4b1d0-c621-41d0-90b9-efd5b91b24f6",
+    "category": "javascript-basics-part1",
+    "question": "Schreibe eine Funktion, die dir den letzten Buchstaben eines Strings zurückgibt:",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>let lastLetter = (str) => str.charAt(str.length - 1)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>let lastLetter = (string) => str.charAt(str.length - 1)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>let lastLetter = str => str.charAt(str.length - 1)</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "377eebde-f8f1-446f-8854-ddbd394ff075",
+    "category": "javascript-basics-part1",
+    "question": "Welche der folgenden Ausdrücke geben den String <code>'S'</code> zurück?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'s'.toUpperCase()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'JavaScript'.substr(1, 4)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>'JavaScript'.substr(4, 1)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<code>'JavaScript'.charAt(5)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "<code>['a', 'b', 'c', 'd']['JavaScript'.indexOf('S')]</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c1fd009f-ebff-486e-83e5-1337ba04e271",
+    "category": "javascript-basics-part1",
+    "question": "Was gibt folgender Code in der JavaScript-Konsole des Browsers aus? <pre>let a = [1, 7, 17]\nconsole.log(a[2])</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      },
+      {
+        "id": 1,
+        "answerText": "17",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "7",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "1",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "7a2aefae-89cc-4016-a6e3-27e405275397",
+    "category": "javascript-basics-part1",
+    "question": "Welche der folgenden Ausdrücke ergeben <code>'c'</code>?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 4,
+        "answerText": "<code>'chris'.substr(0, 1)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "answerText": "<code>['a', 'b', 'c', 'd']['chris'.indexOf('c') + 2]</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'chris'.charAt(0)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>'chris'.charAt(1)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "<code>'chris'.substr(1, 0)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 6,
+        "answerText": "<code>['a', 'b', 'c', 'd']['chris'.indexOf('c') + 1]</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
     "id": "43b1c42a-6b17-41fb-ad4c-95ea20f953a2",
     "category": "object-oriented-programming",
     "question": "Welche Aussage(n) zu Objekten und Klassen in der objektorientierten Programmierung sind zutreffend?",
@@ -89,44 +3206,6 @@
       {
         "id": 4,
         "answerText": "Funktionale Programme lassen sich in objektorientierte Programme überführen, objektorientierte Programme aber nicht in funktionale.",
-        "isCorrect": false
-      }
-    ],
-    "meta": {
-      "timesAnswered": 0,
-      "timesCorrect": 0,
-      "timesIncorrect": 0
-    }
-  },
-  {
-    "id": "dcaac29d-c2bc-46e0-b4f2-00c70a160d6b",
-    "category": "javascript-basics-part1",
-    "question": "Welche der folgenden Aussagen sind richtig?",
-    "correctAnswerCount": 3,
-    "answers": [
-      {
-        "id": 1,
-        "answerText": "JavaScript wird häufig als Textauszeichnungssprache eingesetzt.",
-        "isCorrect": false
-      },
-      {
-        "id": 2,
-        "answerText": "JavaScript kann auf Client und Server eingesetzt werden.",
-        "isCorrect": true
-      },
-      {
-        "id": 3,
-        "answerText": "Mit JavaScript lassen sich Roboter steuern.",
-        "isCorrect": true
-      },
-      {
-        "id": 4,
-        "answerText": "Die Bildbearbeitungssoftware Adobe Photoshop kann mit JavaScript gescriptet werden.",
-        "isCorrect": true
-      },
-      {
-        "id": 5,
-        "answerText": "JavaScript läuft nur im Browser.",
         "isCorrect": false
       }
     ],

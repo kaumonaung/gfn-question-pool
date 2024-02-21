@@ -45,7 +45,9 @@ const SummaryTable = ({
         <TableBody>
           {answers.map((answer) => (
             <TableRow key={answer.questionId}>
-              <TableCell>{answer.question}</TableCell>
+              <TableCell
+                dangerouslySetInnerHTML={{ __html: answer.question }}
+              />
               <TableCell>
                 {answer.answers.length > 0 ? <p>Beantwortet</p> : <p>Leer</p>}
               </TableCell>

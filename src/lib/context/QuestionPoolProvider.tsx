@@ -2,6 +2,8 @@
 
 import questions from '@/lib/data/questions.json';
 
+import { compress, decompress } from 'lz-string';
+
 export const categories: Array<Category> = [
   {
     id: 'javascript-basics-part1',
@@ -67,11 +69,13 @@ const QuestionPoolProvider = ({ children }: { children: React.ReactNode }) => {
     const history = localStorage.getItem('categoryHistory');
 
     if (progress) {
-      setProgressHistory(JSON.parse(progress));
+      const decompressed = decompress(progress);
+      setProgressHistory(JSON.parse(decompressed));
     }
 
     if (history) {
-      setCategoryHistory(JSON.parse(history));
+      const decompressed = decompress(history);
+      setCategoryHistory(JSON.parse(decompressed));
     }
   }, []);
 
@@ -115,12 +119,14 @@ const QuestionPoolProvider = ({ children }: { children: React.ReactNode }) => {
 
   const updateQuestionPool = (updatedQuestions: Question[]) => {
     setQuestionPool(updatedQuestions);
-    localStorage.setItem('progress', JSON.stringify(updatedQuestions));
+    const compressed = compress(JSON.stringify(updatedQuestions));
+    localStorage.setItem('progress', compressed);
   };
 
   const updateCategoryHistory = (updatedCategories: Category[]) => {
     setUpdatedCategories(updatedCategories);
-    localStorage.setItem('categoryHistory', JSON.stringify(updatedCategories));
+    const compressed = compress(JSON.stringify(updatedCategories));
+    localStorage.setItem('categoryHistory', compressed);
   };
 
   return (

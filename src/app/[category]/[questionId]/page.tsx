@@ -41,6 +41,7 @@ export default function QuestionPage({ params }: QuestionPageParams) {
   return (
     <>
       <Navbar />
+
       <PageContainer>
         <Card>
           <div className="flex justify-between">
@@ -58,9 +59,10 @@ export default function QuestionPage({ params }: QuestionPageParams) {
             </div>
           </div>
 
-          <h1 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong mt-2">
-            {questionTitle}
-          </h1>
+          <h1
+            className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong mt-2"
+            dangerouslySetInnerHTML={{ __html: questionTitle }}
+          />
 
           <div className="mt-6 flex flex-col gap-4">
             {answers?.map((answer) => {
@@ -76,9 +78,10 @@ export default function QuestionPage({ params }: QuestionPageParams) {
                     isCorrect && 'bg-emerald-50/80 dark:bg-emerald-900'
                   }`}
                 >
-                  <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong whitespace-pre-wrap font-medium">
-                    {answerText}
-                  </p>
+                  <p
+                    className="text-tremor-content-strong dark:text-dark-tremor-content-strong whitespace-pre-wrap font-medium"
+                    dangerouslySetInnerHTML={{ __html: answerText }}
+                  />
                 </Card>
               );
             })}

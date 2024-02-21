@@ -5,6 +5,7 @@ import QuestionsTable from '@/components/QuestionsTable';
 import QuizCreator from '@/components/quiz/QuizCreator';
 import QuizGameForm from '@/components/quiz/QuizGameForm';
 import Navbar from '@/components/Navbar';
+import QuizNavbar from '@/components/QuizNavbar';
 import { Toaster } from '@/components/ui/Toaster';
 import { ToastAction } from '@/components/ui/Toast';
 
@@ -13,6 +14,8 @@ import { useState } from 'react';
 
 import { QuestionType as Question } from '@/lib/types/Database.types';
 import { useToast } from '@/components/ui/use-toast';
+
+import { shuffleArray } from '@/lib/utils';
 
 type CategoryPageParams = {
   params: {
@@ -58,16 +61,22 @@ export default function CategoryPage({ params }: CategoryPageParams) {
       });
     }
 
-    const shuffled = filteredQuestions.sort(() => Math.random() - 0.5);
-    const quiz = shuffled.slice(0, questionAmount);
+    const shuffledQuestions = shuffleArray(filteredQuestions);
+    const shuffledQuestionsWithRandomAnswers = shuffledQuestions
+      .slice(0, questionAmount)
+      .map((question) => ({
+        ...question,
+        answers: shuffleArray(question.answers),
+      }));
 
-    setQuiz(quiz);
+    setQuiz(shuffledQuestionsWithRandomAnswers);
     setQuizStarted(true);
   };
 
   return (
     <>
       {!quizStarted && <Navbar />}
+      {quizStarted && <QuizNavbar />}
 
       <PageContainer>
         <QuizCreator

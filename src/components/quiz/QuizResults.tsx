@@ -11,6 +11,12 @@ import { Card, DonutChart, type Color } from '@tremor/react';
 import useWindowSize from 'react-use/lib/useWindowSize';
 import Confetti from 'react-confetti';
 
+import {
+  getCardClassName,
+  getTextClassName,
+  getTextContent,
+} from '@/lib/utils';
+
 import { Button } from '@/components/ui/Button';
 import {
   Table,
@@ -33,6 +39,7 @@ const QuizResults = ({ answers, questions }: QuizResults) => {
 
   let wrongAnswerScore = 0;
   let correctAnswersScore = 0;
+  let emptyAnswersScore = 0;
 
   let correctAnswersIds: string[] = [];
   let wrongAnswersIds: string[] = [];
@@ -40,17 +47,33 @@ const QuizResults = ({ answers, questions }: QuizResults) => {
   answers.forEach((answer) => {
     const question = questions.find((q) => q.id === answer.questionId);
     const correctAnswers = answer.answers.filter((a) => a.isCorrect);
+    const wrongAnswers = answer.answers.filter((a) => !a.isCorrect);
+
+    if (answer.answers.length === question?.answers?.length) {
+      wrongAnswerScore += 1;
+      return wrongAnswersIds.push(answer.questionId);
+    }
+
+    if (wrongAnswers.length > 0) {
+      wrongAnswerScore += 1;
+      return wrongAnswersIds.push(answer.questionId);
+    }
 
     if (correctAnswers.length === question?.correctAnswerCount) {
       correctAnswersScore += 1;
-      correctAnswersIds.push(answer.questionId);
-    } else {
-      wrongAnswerScore += 1;
-      wrongAnswersIds.push(answer.questionId);
+      return correctAnswersIds.push(answer.questionId);
     }
   });
 
   const percentage = (correctAnswersScore / questions.length) * 100;
+
+  // Check if there are any empty answers
+  emptyAnswersScore =
+    questions.length - (correctAnswersScore + wrongAnswerScore);
+
+  const emptyAnswers = questions.filter(
+    (question) => !answers.some((a) => a.questionId === question.id)
+  );
 
   const data = [
     {
@@ -60,6 +83,10 @@ const QuizResults = ({ answers, questions }: QuizResults) => {
     {
       name: 'Falsche Antworten',
       value: wrongAnswerScore,
+    },
+    {
+      name: 'Nicht beantwortet',
+      value: emptyAnswersScore,
     },
   ];
 
@@ -85,7 +112,7 @@ const QuizResults = ({ answers, questions }: QuizResults) => {
               variant="donut"
               label={`${percentage.toFixed(0)}% richtig`}
               onValueChange={(v) => console.log(v)}
-              colors={['emerald', 'rose'] as Color[]}
+              colors={['emerald', 'rose', 'gray'] as Color[]}
             />
           </div>
         </div>
@@ -104,7 +131,9 @@ const QuizResults = ({ answers, questions }: QuizResults) => {
         <TableBody>
           {answers.map((answer) => (
             <TableRow key={answer.questionId}>
-              <TableCell>{answer.question}</TableCell>
+              <TableCell
+                dangerouslySetInnerHTML={{ __html: answer.question }}
+              />
               <TableCell>
                 {correctAnswersIds.includes(answer.questionId) ? (
                   <p className="text-emerald-600 dark:text-emerald-500 font-medium">
@@ -115,6 +144,17 @@ const QuizResults = ({ answers, questions }: QuizResults) => {
                     Falsch
                   </p>
                 )}
+              </TableCell>
+            </TableRow>
+          ))}
+
+          {emptyAnswers.map((question) => (
+            <TableRow key={question.id}>
+              <TableCell>{question.question}</TableCell>
+              <TableCell>
+                <p className="text-gray-600 dark:text-gray-500 font-medium">
+                  Nicht beantwortet
+                </p>
               </TableCell>
             </TableRow>
           ))}
@@ -150,52 +190,6 @@ const QuizResults = ({ answers, questions }: QuizResults) => {
 
 export default QuizResults;
 
-function getCardClassName(
-  isSelectedAnswer: boolean | undefined,
-  isUserCorrect: boolean,
-  isCorrect: boolean
-) {
-  if (isSelectedAnswer && isUserCorrect && isCorrect) {
-    return 'border-emerald-600 bg-emerald-100/50 border-2';
-  } else if (isSelectedAnswer && !isUserCorrect && isCorrect) {
-    return 'border-rose-600 bg-rose-100/50 border-2';
-  } else {
-    return '';
-  }
-}
-
-function getTextClassName(
-  isSelectedAnswer: boolean | undefined,
-  isUserCorrect: boolean,
-  isCorrect: boolean
-) {
-  if (isCorrect && !isSelectedAnswer && !isUserCorrect) {
-    return 'text-tremor-content-strong dark:text-dark-tremor-content-strong text-sm font-medium';
-  } else if (isSelectedAnswer && isUserCorrect && isCorrect) {
-    return 'text-emerald-600 dark:text-emerald-500 text-sm font-medium';
-  } else if (isSelectedAnswer && !isUserCorrect && isCorrect) {
-    return 'text-rose-600 dark:text-rose-500 text-sm font-medium';
-  } else {
-    return 'text-sm font-medium';
-  }
-}
-
-function getTextContent(
-  isSelectedAnswer: boolean | undefined,
-  isUserCorrect: boolean,
-  isCorrect: boolean
-) {
-  if (isCorrect && !isSelectedAnswer && !isUserCorrect) {
-    return 'Dies wäre die richtige Antwort.';
-  } else if (isSelectedAnswer && isUserCorrect && isCorrect) {
-    return 'Du hast die richtige Antwort gewählt!';
-  } else if (isSelectedAnswer && !isUserCorrect && isCorrect) {
-    return 'Das war leider nicht die richtige Antwort.';
-  } else {
-    return '';
-  }
-}
-
 type QuestionCardProps = {
   question: Question;
   questionId: string;
@@ -223,14 +217,14 @@ function QuestionCard({
     <Card
       decoration="top"
       decorationColor={isUserCorrect ? 'emerald' : 'rose'}
-      className={`bg-${isUserCorrect ? 'emerald' : 'rose'}-50/80`}
+      className={`
+      ${isUserCorrect ? 'bg-emerald-50/50' : 'bg-rose-50/50'}
+      `}
     >
-      <h1 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong mt-2">
-        <span className="text-rose-600 dark:text-rose-500 font-semibold uppercase text-base">
-          {!isUserCorrect && 'Falsch: '}{' '}
-        </span>
-        {question.question}
-      </h1>
+      <h1
+        className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong mt-2"
+        dangerouslySetInnerHTML={{ __html: question.question }}
+      />
 
       <div className="mt-6 flex flex-col gap-4">
         {question.answers?.map((answer) => {
@@ -244,16 +238,17 @@ function QuestionCard({
             <Card
               key={id}
               decoration="left"
-              decorationColor={isCorrectAnswer ? 'emerald' : 'none'}
+              decorationColor={isCorrectAnswer ? 'emerald' : 'gray'}
               className={getCardClassName(
                 isSelectedAnswer,
                 isUserCorrect,
                 isCorrect
               )}
             >
-              <p className="text-tremor-content-strong dark:text-dark-tremor-content-strong whitespace-pre-wrap font-medium">
-                {answerText}
-              </p>
+              <p
+                className="text-tremor-content-strong dark:text-dark-tremor-content-strong whitespace-pre-wrap font-medium"
+                dangerouslySetInnerHTML={{ __html: answerText }}
+              />
 
               <div className="mt-1 text-right">
                 <span

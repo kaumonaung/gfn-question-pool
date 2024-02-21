@@ -5,6 +5,7 @@ import ExamCreator from '@/components/exam/ExamCreator';
 import ExamGameForm from '@/components/exam/ExamGameForm';
 import PageContainer from '@/components/PageContainer';
 import Navbar from '@/components/Navbar';
+import QuizNavbar from '@/components/QuizNavbar';
 import { Toaster } from '@/components/ui/Toaster';
 import { ToastAction } from '@/components/ui/Toast';
 
@@ -13,6 +14,8 @@ import { QuestionType as Question } from '@/lib/types/Database.types';
 
 import { useToast } from '@/components/ui/use-toast';
 import { useState } from 'react';
+
+import { shuffleArray } from '@/lib/utils';
 
 export default function Home() {
   const { questionPool, categories } = useQuestionPool();
@@ -40,16 +43,22 @@ export default function Home() {
       });
     }
 
-    const shuffled = allQuestions.sort(() => Math.random() - 0.5);
-    const quiz = shuffled.slice(0, questionAmount);
+    const shuffledQuestions = shuffleArray(allQuestions);
+    const shuffledQuestionsWithRandomAnswers = shuffledQuestions
+      .slice(0, questionAmount)
+      .map((question) => ({
+        ...question,
+        answers: shuffleArray(question.answers),
+      }));
 
-    setQuiz(quiz);
+    setQuiz(shuffledQuestionsWithRandomAnswers);
     setQuizStarted(true);
   };
 
   return (
     <>
       {!quizStarted && <Navbar />}
+      {quizStarted && <QuizNavbar />}
 
       <PageContainer>
         <ExamCreator

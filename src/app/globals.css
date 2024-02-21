@@ -73,4 +73,12 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  code {
+    @apply bg-gray-200/60 p-1.5 rounded mx-1 text-sm dark:bg-gray-800 text-gray-800 dark:text-white font-semibold;
+  }
+
+  pre {
+    @apply bg-gray-200/60 p-4 rounded text-sm dark:bg-gray-800 text-gray-800 dark:text-white font-semibold;
+  }
 }

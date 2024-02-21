@@ -40,7 +40,7 @@ const ChapterCard = ({ props }: ChapterCardProps) => {
   });
 
   return (
-    <Link href={id}>
+    <Link href={id} className="cursor-pointer">
       <Card
         className="mx-auto max-w-md py-10 h-full flex flex-col justify-between"
         decoration="top"
