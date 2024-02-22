@@ -107,35 +107,6 @@ const ExamResults = ({ answers, questions }: QuizResults) => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Map through answers to get all categories
-  const categoryStats: Record<string, CategoryStats> = {};
-
-  answers.forEach((answer) => {
-    const category = answer.category;
-    const categoryTitle = categories?.find((el) => el.id === category)?.title;
-    const questionId = answer.questionId;
-    const question = questions.find((q) => q.id === questionId);
-    const correctAnswers = answer.answers.filter((a) => a.isCorrect);
-
-    let questionIds = questions.map((q) => {
-      return q.id;
-    });
-
-    if (!categoryStats[category]) {
-      categoryStats[category] = {
-        title: categoryTitle,
-        correct: 0,
-        incorrect: 0,
-      };
-    }
-
-    if (correctAnswers.length === question?.correctAnswerCount) {
-      categoryStats[category].correct++;
-    } else {
-      categoryStats[category].incorrect++;
-    }
-  });
-
   return (
     <div>
       <div className="mx-auto space-y-12">
@@ -157,41 +128,6 @@ const ExamResults = ({ answers, questions }: QuizResults) => {
       </div>
 
       <div className="mt-10">
-        <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong text-center">
-          Zusammenfassung
-        </h3>
-
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>Kategorie</TableHead>
-              <TableHead className="text-center">Status</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            {Object.entries(categoryStats).map(([category, stats]) => (
-              <TableRow key={category}>
-                <TableCell>{stats.title}</TableCell>
-                <TableCell className="text-center">
-                  <span className="text-emerald-600 dark:text-emerald-500 font-medium">
-                    {stats.correct} richtig
-                  </span>
-                  <span className="mx-2 font-medium">|</span>
-                  <span className="text-rose-600 dark:text-rose-500 font-medium">
-                    {stats.incorrect} falsch
-                  </span>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </div>
-
-      <div className="mt-10">
-        <h3 className="text-tremor-title font-semibold text-tremor-content-strong dark:text-dark-tremor-content-strong text-center">
-          Details zu den Fragen
-        </h3>
-
         <Table>
           <TableCaption>
             {correctAnswersScore} / {questions.length} richtig beantwortet

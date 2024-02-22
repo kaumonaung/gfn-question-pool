@@ -3117,6 +3117,1463 @@
     }
   },
   {
+    "id": "c9f31521-4662-49be-9a7f-5dface22a58d",
+    "category": "javascript-basics-part2",
+    "question": "Für eine Reihe von Messwerten wird jeweils das Quadrat benötigt. Verwerfe Ergebnisse über 10. Ergebnis: <code>[ 9, 4, 1 ]</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>[5, 3, 2, 5, 8, 1].map(x => x * x).filter((x) => x <= 10)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>[5, 3, 2, 5, 8, 1].map(x => Math.sqrt(x)).filter((x) => x <= 10)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>[5, 3, 2, 5, 8, 1].forEach(x => x * x).filter((x) => x <= 10)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>[5, 3, 2, 5, 8, 1].forEach(x => Math.sqrt(x)).filter((x) => x <= 10)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d1a5bda2-5ec5-4bb2-9708-cf99ca685311",
+    "category": "javascript-basics-part2",
+    "question": "Welcher Ausdruck ist richtig, um folgende Ausgabe zu erhalten? Ausgabe: <code>false</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>console.log([3, 16, 27].every((el) => el % 3 === 0))</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>console.log([3, 16, 27].some((el) => el % 3 === 0))</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "91094c11-50e4-4841-94f7-163d5e39ff58",
+    "category": "javascript-basics-part2",
+    "question": "Was liefert der folgende Ausdruck zurück? <code>[2, 3, 4].reduce((a, b) => a * b - 1)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Ergebnis: 19",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Ergebnis: 20",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Ergebnis: 12",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e1baeb36-b250-4d9a-ad34-274021e34a4e",
+    "category": "javascript-basics-part2",
+    "question": "Welche Higher-Order-Funktion, die auf JS-Arrays verfügbar ist, benötigst du, um herauszufinden, ob wenigstens ein Element in einem Array einer bestimmten Bedingung genügt? Es soll nur <code>true</code> oder <code>false</code> zurückgegeben werden.",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "some",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "every",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "df4bbb86-29e9-46c2-9cb7-fc946cbbfcf9",
+    "category": "javascript-basics-part2",
+    "question": "Welcher Ausdruck ist richtig, um folgende Ausgabe zu erhalten? Ausgabe: <code>true</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>console.log([14, 10, 19].some((el) => el % 2 === 0))</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>console.log([14, 10, 19].every((el) => el % 2 === 0))</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "259bd4b5-e69b-4572-b5f0-1b86d3c8daf7",
+    "category": "javascript-basics-part2",
+    "question": "Was liefert der nachfolgende Ausdruck zurück?\n\n<pre>[1].map(() => {\n      2\n})</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Einen nicht definierten Wert",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Ein Array mit einem Element, das den Wert 2 hat",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Ein Array mit einem Element, das den Wert 1 hat",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Ein leeres Array",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "Ein Array mit einem Element, das den Wert undefined hat",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "3de95b14-c089-4279-9872-5652412058ad",
+    "category": "javascript-basics-part2",
+    "question": "Für eine Reihe von Messwerten wird jeweils die Quadratwurzel benötigt. Welcher Ausdruck ist richtig, um das folgende Ergebnis zu erhalten? Ergebnis: <code>[ 7, 3, 5, 3 ]</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>[-1, 49, 9, 25, -3, 9].filter((x) => x > 0).map(Math.sqrt)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>[-1, 49, 9, 25, -3, 9].filter((x) => x < 0).map(Math.sqrt)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>[-1, 49, 9, 25, -3, 9].filter((x) => x > 0).map((x) => x * x)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>[-1, 49, 9, 25, -3, 9].filter((x) => x > 0).every(Math.sqrt)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "21893b94-ae11-4a2a-8140-7ac93bd068bd",
+    "category": "javascript-basics-part2",
+    "question": "Was gibt folgender Code in der JavaScript-Konsole des Browsers aus? <code>console.log([14, 10, 20].every((el) => el % 2 === 0))</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>true</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>false</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e1c30343-3725-48fc-8241-589ee1515eec",
+    "category": "javascript-basics-part2",
+    "question": "Was liefert der folgende Ausdruck zurück? <code>[1, 2].map((a) => 3)</code>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>[3, 3]</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>[a, a]</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>[undefined, undefined]</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "484faad7-9129-4bdf-bb40-0f01d77b2668",
+    "category": "javascript-basics-part2",
+    "question": "Welche Higher-Order-Funktion, die auf JS-Arrays verfügbar ist, benötigst du, um herauszufinden, ob alle Elemente in einem Array einer bestimmten Bedingung genügen? Es soll nur <code>true</code> oder <code>false</code> zurückgegeben werden.",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>some</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>every</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a51af07c-a66e-48b7-85ee-7c5083ce0e85",
+    "category": "javascript-basics-part2",
+    "question": "Welche Ausgabe erzeugt folgender Code?\n<pre>'use strict'\n\nlet x = () => (a = 3)\nlet y = () => (a = 5)\nlet z = () => console.log(a)\n\nx()\ny()\nz()</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>3</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>5</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Keine Ausgabe. Das Programm bricht mit einer Fehlermeldung ab.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "7c88f4f9-ccc9-4c05-a8e4-312da170587d",
+    "category": "javascript-basics-part2",
+    "question": "Welche Ausgabe erzeugt folgender Code?\n<pre>let x = () => (a = 3)\nlet y = () => (a = 5)\nlet z = () => console.log(a)\n\nx()\ny()\nz()</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>3</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>5</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Keine Ausgabe. Das Programm bricht mit einer Fehlermeldung ab.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "75626d00-170d-487e-81b1-0463b24fdc92",
+    "category": "javascript-basics-part2",
+    "question": "Was ist der Wert von <code>total</code>, nachdem dieses Codefragment ausgeführt wurde?\n<pre>let total = 10\nlet f = () => {\n    [3, 4, 3].forEach((el) => {\n        total += el\n    })\n}</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>10</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>20</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "6956d45a-1410-40b7-a340-8072b3527ba0",
+    "category": "javascript-basics-part2",
+    "question": "Die Fähigkeit einer Funktion, sich selbst aufzurufen, nennt man",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Rekursion",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Callback",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Funktionsaufruf",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "53ecba8a-11f9-491f-9e84-a6386c41271d",
+    "category": "javascript-basics-part2",
+    "question": "Bestimme die Ausgabe des folgenden Skriptes:\n<pre>const calc = (x) => (x > 100 ? 100 : calc(x * 2))\nconsole.log(calc(3) + 1)</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>7</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>100</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>6</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Infinity",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "Es gibt keine Ausgabe, das Programm bleibt hängen.\n",
+        "isCorrect": false
+      },
+      {
+        "id": 6,
+        "answerText": "<code>101</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a4725873-b892-4075-afb3-b149f5bbb33f",
+    "category": "javascript-basics-part2",
+    "question": "Bestimme die Ausgabe des folgenden Skriptes:\n<pre>const calc = (x) => calc(x) * 2\nconsole.log(calc(3) + 1)</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>7</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>7</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>3</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Infinity",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "Es gibt keine Ausgabe, das Programm bleibt hängen.\n",
+        "isCorrect": true
+      },
+      {
+        "id": 6,
+        "answerText": "<code>2</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "7c193e8c-e25f-409b-833b-2e8d9c8be4b5",
+    "category": "javascript-basics-part2",
+    "question": "Welche Funktion berechnet rekursiv die Summe aller Zahlen in einem Array?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>const sum = (arr) => arr.length === 0 ? 0 : arr[0] + sum(arr.slice(1))</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>const sum = (arr) => arr.length === 0 ? 0 : arr[1] + sum(arr.slice(1))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>const sum = (arr) => arr.length === 0 ? 0 : arr[0] + sum(arr.slice(0))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>const sum = (arr) => arr.length === 0 ? 0 : arr[1] + sum(arr.slice(0))</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "542f42d3-41b6-434b-8583-7e2a26731634",
+    "category": "javascript-basics-part2",
+    "question": "Welche Funktion ist korrekt?\n<pre>showTodoList(['find batteries', 'save world', 'get out of house'])\n\n=> find batteries\n=> save world\n=> get out of house</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>const showTodoList = (todos, startChars ='=>') => console.log(todos.map(t => `${startChars} ${t}` ).join('\\n'))</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>const showTodoList = (Todos, startChars ='=>') => console.log(todos.map(t => `${startChars} ${t}` ).join('\\n'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>const showTodoList = (Todos, startChars ='=>') => console.log(todos.map(todo => `${startChars} ${t}` ).join('\\n'))</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "4735ecc9-3b55-46f4-beb9-dd369da09434",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>const showTodoList = (startChar, todos = ['get some milk']) => console.log(todos.map(t => `${startChar} ${t}` ).join('\\n'))</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>const showTodoList = (startChar, todos) => console.log(todos.map(t => `${startChar} ${t}` ).join('\\n'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>const showTodoList = (startChar, todos = ['get some milk']) => console.log(todos.map(todo => `${startChar} ${t}` ).join('\\n'))</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Welche Funktion ist korrekt?\n<pre>showTodoList('*')\n\n* get some milk</pre>"
+  },
+  {
+    "id": "ef10d96e-8634-4bc6-b085-29adb5c59173",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'abc'.split('').map((x, i, a) => `${a.length - i}${x}`).join('-')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'abc'.split('').map((a, b, c) => `${a.length - i}${x}`).join('-')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>'abc'.split('').map((x, i, a) => `${x.length - i}${x}`).join('-')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Welcher Ausdruck erzeugt aus dem String <code>'abc'</code> den String <code>'3a-2b-1c'</code>?"
+  },
+  {
+    "id": "c5b22f9a-05bd-40f9-b607-27997322983b",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>'xyz'.split('').map((x, i) => `${x}${i+1}`).join('-')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>'xyz'.split('').map((x, i) => `${x}${i-1}`).join('-')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>'xyz'.split('').map((x, i) => `${i}${x+1}`).join('-')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Welcher Ausdruck erzeugt aus dem String <code>'xyz'</code> den String <code>'x1-y2-z3'</code>?"
+  },
+  {
+    "id": "efc56479-12a2-4ddb-ab4a-9a2732a389ec",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>letters[1][0]</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>letters[0][1]</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>letters[1][1]</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Gib <code>x</code> zurück:\n\n<pre>const letters = [\n     [‘a’, ‘b’, ‘c’]\n     [‘x’, ‘y’, ‘z’]\n]</pre>"
+  },
+  {
+    "id": "154c5007-0a7f-453e-bef6-906b05c44009",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>letters[0][2]</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>letters[1][1]</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>letters[2][1]</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>letters[0][3]</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Gib <code>x</code> zurück:\n\n<pre>const letters = [\n     [‘a’, ‘b’, ‘c’]\n     [‘x’, ‘y’, ‘z’]\n]</pre>"
+  },
+  {
+    "id": "0cf99a7d-6488-48c1-b2dd-5a2bf9061cc7",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>3</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>4</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>1</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>2</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Bestimme den Rückgabewert von folgendem Code: <code>Number(Object.keys({1: 2, 3: 4})[1])</code>"
+  },
+  {
+    "id": "c6fb214b-7d1f-400d-9dee-240ea2e4e2f0",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>3</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>4</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>1</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>2</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Bestimme den Rückgabewert von folgendem Code: <code>Object.values({1: 2, 3: 4})[1]</code>"
+  },
+  {
+    "id": "92d47e48-511c-451f-b217-072c2b41154e",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>[6, 8]</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>[5, 7]</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>[6, 6]</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>[8, 8]</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Bestimme den Rückgabewert von folgendem Code: <code>Object.entries({5: 6, 7: 8}).map(x => x[1])</code>"
+  },
+  {
+    "id": "de568b2d-3388-45f0-a2c1-8f36968d5629",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>b = 1, c = 2</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>b = 2, c = 1</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Bestimme den Inhalt von <code>b</code> und <code>c</code> nach dem Ausführen der folgenden Anweisung: <code>const [b, c] = [1, 2]</code>"
+  },
+  {
+    "id": "0c1c5c25-2511-4d8e-9f5a-33cd53c7b541",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>a = 2, b = 1</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>a = 1, b = 2</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>a = 3, b = 1</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>a = 2, b = 3</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Bestimme den Inhalt von <code>a</code> und <code>b</code> nach dem Ausführen der folgenden Anweisung: <code>const [b, a] = [1, 2, 3]</code>"
+  },
+  {
+    "id": "1ae31ee2-88d1-4e46-97eb-63d3cf67ef09",
+    "category": "javascript-basics-part2",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>a = 2, b = 3</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>a = 3, b = 2</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>a = 1, b = 2</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>a = 3, b = 1</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Bestimme den Inhalt von <code>a</code> und <code>b</code> nach dem Ausführen der folgenden Anweisung: <code>const [b, a] = [3, 2, 1]</code>"
+  },
+  {
+    "id": "42939fb7-9550-4d56-aa16-daa24b628789",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelectorAll('img + h2')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelectorAll('img h2')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelectorAll('img < h2')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Benutze einen geeigneten Selektor, um alle Überschriften der Stufe 2 (h2) zu finden, die unmittelbar nach einem Bild (img) folgen."
+  },
+  {
+    "id": "e3725396-bebc-40fb-bd54-c8695df5baa2",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelectorAll('input[type=\"number\"]').forEach((input) => input.classList.remove('animated'))</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelector('input[type=\"number\"]').forEach((input) => input.classList.remove('animated'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelectorAll('input[type=\"number\"]').forEach((input) => input.remove('animated'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>document.querySelector('input[type=\"number\"]').forEach((input) => input.remove('animated'))</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Entferne die CSS-Klasse <code>animated</code> von allen numerischen Eingabefeldern."
+  },
+  {
+    "id": "73c9e0e9-c0e4-4588-97af-8d145d9a2c04",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelector('#nav').classList.contains('centered')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelector('.nav').classList.contains('centered')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelector('#nav').contains('centered')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>document.querySelector('.nav').contains('centered')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Finde heraus, ob das Element mit der ID <code>nav</code> über die CSS-Klasse <code>centered</code> verfügt."
+  },
+  {
+    "id": "7a50f675-01fa-410d-8cc6-76e86319e917",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelectorAll('div').forEach(a.classes += 'foo')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelectorAll('div').forEach(d.classList.add('foo'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelectorAll('div').forEach(d => d.classes.add('foo'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>document.querySelectorAll('div').forEach(d => d.classList += 'foo')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "<code>document.querySelectorAll('div').forEach(a => a.classList.add('foo'))</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Ordne allen div-Elementen die CSS-Klasse <code>foo</code> zu ohne Verwendung der <code>$</code > bzw. < code >$$</code >-Funktion."
+  },
+  {
+    "id": "72c2c828-f714-4043-90ff-a001f7ea9e8f",
+    "category": "javascript-dom",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code><script src=\"main.js\" async=\"async\" /></code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code><script src=\"main.js\" async /></code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code><script src=\"main.js\" defer /></code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code><script src=\"main.js\" defer=\"defer\" /></code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Lade das die JavaScript-Datei <code>main.js</code>, sodass es das Laden von HTML nicht verzögert und sofort nach dem Laden ausgeführt wird."
+  },
+  {
+    "id": "3b62ab4b-784f-4230-b502-d70bf678474a",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "async",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "defer",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "type=\"module\"",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Welches HTML-Attribut erlaubt das parallele Laden von JS-Dateien und führt sie sofort nach dem Laden aus?"
+  },
+  {
+    "id": "c72a5fa3-dde1-4f99-85d1-7b21a5463c4b",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "async",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "defer",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "type=\"module\"",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Welches HTML-Attribut verzögert die Ausführung von JavaScript, bis das DOM geladen ist?"
+  },
+  {
+    "id": "ecc6da1d-333a-4b23-a843-a38f2899bc58",
+    "category": "javascript-dom",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>$on($$('button'), 'dblclick', e => console.log('Hello World'))</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>$$('button').addEventListener(e => console.log('Hello World', 'dblclick'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>$on($('button'), 'dblclick', console.log('Hello World'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>$on($$('button'), 'dblclick', console.log('Hello World'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "<code>$$('button').forEach(el => $on(el, 'dblclick', e => console.log('Hello World')))</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Gegeben sind die folgenden Hilfsfunktionen:\n<pre>const $ = (q) => document.querySelector(q)\nconst $$ = (q) => Array.from(document.querySelectorAll(q))\nconst $on = (element, event, func) =>\n    Array.isArray(element)\n        ? element.forEach((currentElement) => $on(currentElement, event, func))\n        : element.addEventListener(event, func)</pre>\n\nRegistriere eine Funktion, die <code>Hello World</code> in der JavaScript-Konsole des Browsers ausgibt, auf dem Doppelklick aller <code>button</code >-Tags."
+  },
+  {
+    "id": "e8f0a31a-9a00-4ef9-ad04-38d44d683fb0",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>$on($$('textarea'), 'keydown', e => console.log('Hello World'))</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>$($$('textarea'), 'keydown', e => console.log('Hello World'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>$on($('textarea'), 'keydown', e => console.log('Hello World'))</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>$($$('textarea'), 'keydown', e => console.log('Hello World'))</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Gegeben sind die folgenden Hilfsfunktionen:\n<pre>const $ = (q) => document.querySelector(q)\nconst $$ = (q) => Array.from(document.querySelectorAll(q))\nconst $on = (element, event, func) =>\n    Array.isArray(element)\n        ? element.forEach((currentElement) => $on(currentElement, event, func))\n        : element.addEventListener(event, func)</pre>\n\nRegistriere eine Funktion auf dem <code>keydown</code>-Event aller textarea-Tags. Die Funktion soll <code>Hello World</code> in der JavaScript-Konsole des Browsers ausgeben."
+  },
+  {
+    "id": "53817d46-4428-496a-b92a-617212946a55",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>const logMouseX = e => console.log(e.screenX)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>const logMouseX = e => console.log(e.screenY)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>const logMouseX = e => console.log(e.X)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Die Funktion <code>logMouseX</code> soll die X-Koordinate des Mauszeigers (auf dem Bildschirm) in der JavaScript-Konsole des Browsers ausgeben. Diese Funktion wird später wie folgt als Event-Handler registriert: <code>document.addEventListener('mousemove', logMouseX)</code>"
+  },
+  {
+    "id": "21b0dc83-44d2-44b1-9622-f2cfdf6915cd",
+    "category": "javascript-dom",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelector('#my_button').remove('disabled')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelector('#my_button').removeAttribute('disabled')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelector('#my_button').disabled = true</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>document.querySelector('#my_button').disabled = false</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 5,
+        "answerText": "<code>document.querySelector('#my_button').setAttribute('enabled', true)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Der Button mit der ID <code>'my_button'</code> ist ausgegraut/deaktiviert (disabled). Aktiviere den Button wieder! Es gibt mehrere Möglichkeiten."
+  },
+  {
+    "id": "5fd40685-74f9-43ba-ae16-0c6448d25e46",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelectorAll('h1').forEach(e => e.style.fontSize = '3em')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelectorAll('h1').forEach(e => e.fontSize = '3em')",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Ändere die Schriftgröße aller h1-Tags auf 3em."
+  },
+  {
+    "id": "b8569bfa-5c08-4be6-a9c5-166371d2849b",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelectorAll('h2 + p').forEach(e => e.style.color = 'red')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelectorAll('h2 p').forEach(e => e.style.color = 'red')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelectorAll('h2 + p').forEach(e => e.style.textColor = 'red')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelectorAll('h2 > p').forEach(e => e.style.textColor = 'red')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Welcher Ausdruck färbt alle Absätze, die direkt auf ein h2-Tag folgen, rot ein?"
+  },
+  {
+    "id": "b49aaf98-bbf9-43d1-a2db-25fde8be6370",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "DOMStringMap",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "HTMLElement",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Welchen Datentyp hat ein <code>dataset</code>?"
+  },
+  {
+    "id": "5d9a6180-182f-45fb-8b2c-bf352e6e5844",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "data-currency=\"Euro\"",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "currency=\"Euro\"",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Die Währung Euro eines Geldbetrags soll unter <code>currency</code> aus einem <code>dataset</code> abrufbar sein. Welcher Ausdruck ist dafür richtig?"
+  },
+  {
+    "id": "0d78e89c-a3ea-4fab-9703-7b6f016cffc6",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>const br = document.createElement('br')\ndocument.body.appendChild(br)</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>const br = document.createElement('<br>')\ndocument.body.appendChild(br)</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>const br = document.createElement('br')\ndocument.body.addChild(br)</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>const br = window.createElement('br')\ndocument.body.appendChild(br)</pre>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Füge zum Ende des HTML-Bodys einen br-Tag hinzu."
+  },
+  {
+    "id": "29e0d137-0f34-49e7-8f7a-805f35070e67",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "parentNode",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "ancestorNode",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Mit welcher Eigenschaft greifst du auf das Elternelement eines DOM-Knotens zu?"
+  },
+  {
+    "id": "3cceea37-f4d2-43c4-828d-6c9a99403ab4",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "previousElementSibling",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "previousNodeSibling",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Mit welcher Eigenschaft greifst du auf das vorherige Geschwisterelement eines DOM-Knotens zu?"
+  },
+  {
+    "id": "be9aaba9-2da2-4421-b5ef-5d9de1dd604e",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "nextElementSibling",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "nextNodeSibling",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Mit welcher Eigenschaft greifst du auf das nächste Geschwisterelement eines DOM-Knotens zu?"
+  },
+  {
+    "id": "09d05c99-6e7a-44a8-833e-00a523dac3f5",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>console.log(document.querySelector('#my_list').childElementCount)\n</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>console.log(document.querySelector('#my_list').elementCount)\n</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Gegeben ist eine unordered List mit der ID <code>my_list</code>, die 5 <code>li</code>-Elemente enthält. Finde per JavaScript anhand der ID die Anzahl der <code>li</code>-Elemente (5) heraus."
+  },
+  {
     "id": "43b1c42a-6b17-41fb-ad4c-95ea20f953a2",
     "category": "object-oriented-programming",
     "question": "Welche Aussage(n) zu Objekten und Klassen in der objektorientierten Programmierung sind zutreffend?",
@@ -3206,6 +4663,2129 @@
       {
         "id": 4,
         "answerText": "Funktionale Programme lassen sich in objektorientierte Programme überführen, objektorientierte Programme aber nicht in funktionale.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "7893502c-6a5a-46e8-a32d-66380132b38b",
+    "category": "object-oriented-programming",
+    "question": "Welcher Code instanziiert ein Objekt über eine Factory-Funktion?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>function todo(todoText) {\n\n   return {\n     todoText: todoText\n   }\n}",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>function todo(todoText) {\n\n   return {\n     console.log(todoText)\n   }\n}</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>function todo(todoText) {\ntodoText\n}</pre>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "1bd99686-eace-4b67-8997-a66435eff44b",
+    "category": "object-oriented-programming",
+    "question": "Welche Aussagen zur Vererbung in JavaScript sind zutreffend?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Private Attribute werden nicht vererbt.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Du kannst Methoden der Elternklasse überschreiben.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Um von einer Klasse zu erben, schreibt man dessen Namen mit einem führenden Doppelpunkt hinter den neuen Klassennamen.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Wenn die Elternklasse Parameter erwartet, dann müssen diese in der Kindklasse auch erwartet und über das super()-Keyword an die Elternklasse weitergegeben werden.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "45b73bf0-7082-40c1-8266-776d756946b9",
+    "category": "object-oriented-programming",
+    "question": "Welche Aussagen zur Implementierung von Gettern und Settern sind zutreffend?\n",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Getter und Setter können über <code>Object.defineProperty()</code> erstellt werden.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Getter und Setter müssen bei privaten Attributen implementiert werden.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Getter und Setter werden im Konstruktor definiert.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Getter und Setter müssen zusammen implementiert werden.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d2f40383-49eb-4ae1-9158-15fd568d3f43",
+    "category": "object-oriented-programming",
+    "question": "Welche Aussagen zu statischen Attributen in JavaScript sind zutreffend?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Eine Klasse kann nicht statische und normale Attribute besitzen.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Statische Attribute werden mit dem <code>static</code>-Keyword erstellt.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Statische Attribute werden über die zugehörige Klasse angesprochen.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Anders als statische Methoden werden statische Attribute an die Objektinstanz weitergegeben.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e9b4f6cf-85e1-4971-a4b3-1389be91fbdd",
+    "category": "object-oriented-programming",
+    "question": "Welches Codebeispiel zeigt korrekt die Implementierung einer abstrakten Klasse in JavaScript?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>class Car {\n    constructor() {\n      if (new.target === Car) {\n          throw new TypeError('Car is an abstract class and cannot be instantiated')\n      }\n    }\n}</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>abstract class Car {\n    constructor(brand) {\n      if (new.target === Car) {\n          throw new TypeError('Car is an abstract class and cannot be instantiated')\n      }\n      if (this.drive === undefined || typeof this.drive !== 'function') {\n          throw new TypeError('Abstract method drive must be declared')\n      }\n      this.brand = brand\n    }\n}</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>class Car {\n    constructor(brand) {\n      if (new.target === Car) {\n          throw new TypeError('Car is an abstract class and cannot be instantiated')\n      }\n      if (this.drive === undefined || typeof this.drive !== 'function') {\n          throw new TypeError('Abstract method drive must be declared')\n      }\n      if (this.brand === undefined || typeof this.brand !== 'variable') {\n          throw new TypeError('Abstract variable drive must be declared')\n      }\n    }\n}</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>class Car {\n    constructor(brand) {\n      if (new.target === Car) {\n          throw new TypeError('Car is an abstract class and cannot be instantiated')\n      }\n      if (this.drive === undefined || typeof this.drive !== 'function') {\n          throw new TypeError('Abstract method drive must be declared')\n      }\n      this.brand = brand\n    }\n}</pre>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "3cb3110d-856f-4aa6-be62-87fd8d9d2961",
+    "category": "object-oriented-programming",
+    "question": "Welches Codebeispiel zeigt korrekt die Übertragung des this-Kontexts in JavaScript?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>const data = {\n    brands: ['Audi', 'BMW', 'Mercedes', 'VW'],\n}\n\nfunction listBrands() {\n   console.log(this.join(', '))\n}\n\nlistBrands.call(data)</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>abstract class Car {\n    constructor(brand) {\n      if (new.target === Car) {\n          throw new TypeError('Car is an abstract class and cannot be instantiated')\n      }\n      if (this.drive === undefined || typeof this.drive !== 'function') {\n          throw new TypeError('Abstract method drive must be declared')\n      }\n      this.brand = brand\n    }\n}</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>const data = {\n    brands: ['Audi', 'BMW', 'Mercedes', 'VW'],\n}\n\nfunction listBrands() {\n   console.log(this.join(', '))\n}\n\nlistBrands.apply(data.brands)</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>const data = {\n    brands: ['Audi', 'BMW', 'Mercedes', 'VW'],\n}\n\nfunction listBrands() {\n   console.log(this.join(', '))\n}\n\nlistBrands.bind(data)</pre>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a8ab8d3a-dd61-475a-bbad-a034579b2139",
+    "category": "object-oriented-programming",
+    "question": "Welches Codebeispiel zeigt korrekt die Implementierung eines immutable Objects?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>const audi = Object.freeze({brand: 'audi'})</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>const bmw = Object.createImmutable({brand: 'bmw'})</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>const vw = Object({brand: 'vw'})</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>const mercedes = Object.save({brand: 'mercedes'})</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "748b809e-7df5-43d0-b6ff-cb27c73013ab",
+    "category": "object-oriented-programming",
+    "question": "Wie sieht die Kommunikation mit dem State im State-Management aus?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Der State kann direkt manipuliert werden, sollte es aber nicht.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Durch die Verwendung eines Proxys kann in Echtzeit auf Änderungen des States reagiert werden.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Über die Funktion <code>getState()</code> des Stores kann eine Kopie des States erhalten werden.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Über die Funktion <code>dispatch()</code> des Stores kann eine Aktion des Reducers zur Modifikation des States ausgeführt werden.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "46f3f919-6d3d-41b0-9bc1-2008c063c970",
+    "category": "object-oriented-programming",
+    "question": "Welche Vorteile liefert State-Management?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Der State kann direkt manipuliert werden, sollte es aber nicht.\n",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Mit State-Management kann man abhängig vom Zustand einer Anwendung verschiedene Reaktionen ausführen.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "State-Management kann nur in Kombination mit DOM-Events verwendet werden.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Mit State-Management kann man unkompliziert Nutzereingaben verwalten.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "94478802-b253-4b4c-b748-7036ba2eac8a",
+    "category": "backend-javascript",
+    "question": "Wozu dient der Node Package Executor?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Der State kann direkt manipuliert werden, sollte es aber nicht.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Der Node Package Executor ist ein Tool, um seine selbst geschriebenen Packages zu testen.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Der Node Package Executor dient zum Ausführen von lokalen Node-Projekten während der Entwicklung.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Mit ihm können Packages einmalig verwendet werden, ohne sie extra installieren zu müssen.\n",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "60577b48-f2d8-459e-b8ba-3b56f525a902",
+    "category": "backend-javascript",
+    "question": "Welche Aussagen über <code>require()</code> und <code>import</code> sind korrekt?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Beide beschreiben verschiedene Wege, wie eine JavaScript-Datei in eine andere JavaScript-Datei eingebunden werden kann.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Mit <code>require()</code> können Dateien konditional eingebunden werden, während dies mit import nicht möglich ist.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>require()</code> beschreibt den alten Import von Dateien vor der Einführung des ES6-Standards, <code>import</code> hat <code>require()</code> mit der Einführung von ES6 abgelöst.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>import</code> ist der Standardweg zum Einbinden von JavaScript-Dateien im ES6-Standard, wohingegen <code>require()</code>  ausschließlich für Node-Packages verwendet werden kann.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "0dd96061-b7eb-49b0-bb63-0d6689480dfb",
+    "category": "backend-javascript",
+    "question": "Welche Datei enthält die wichtigsten Informationen eines Packages und genügt allein, um alle für dieses Package benötigten Abhängigkeiten zu installieren?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 2,
+        "answerText": "node.config",
+        "isCorrect": false
+      },
+      {
+        "id": 1,
+        "answerText": "node_modules.js",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "package.json",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "package-lock.json",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "b40c193b-7e91-4d35-b240-2e5a4452d959",
+    "category": "backend-javascript",
+    "question": "Wie definierst du Packages als Abhängigkeiten in der package.json?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 2,
+        "answerText": "<pre>{\n    ...\n    \"dependencies\": {\n        \"bcrypt\": \"^5.1.0\",\n        \"jsonwebtoken\": \"^8.5.11\",\n        \"passport\": \"^0.6.0\",\n        \"passport-jwt\": \"^4.0.0\"\n     }\n}</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "answerText": "<pre>{\n    ...\n    \"dependencies\": [\n        \"bcrypt\": \"^5.1.0\",\n        \"jsonwebtoken\": \"^8.5.11\",\n        \"passport\": \"^0.6.0\",\n        \"passport-jwt\": \"^4.0.0\"\n     ]\n}</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>{\n    ...\n    dependencies: [\n        bcrypt: ^5.1.0,\n        jsonwebtoken: ^8.5.11,\n        passport: ^0.6.0,\n        passport-jwt: ^4.0.0\n     ]\n}</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>{\n    ...\n    dependencies: [\n        bcrypt, jsonwebtoken, passport, passport-jwt\n     ]\n}</pre>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "175e3780-7041-4f48-ab86-fa9c713873ae",
+    "category": "backend-javascript",
+    "question": "Wie importierst du die Funktionen <code>readFileSync()</code> und <code>writeFileSync()</code> korrekt aus dem Node-Package fs?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 2,
+        "answerText": "<code>require readFileSync, writeFileSync from 'fs'</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 1,
+        "answerText": "<code>const { readFileSync, writeFileSync } = require('fs')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>import readFileSync, writeFileSync from fs</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>const { readFileSync } = require('fs')\nconst { writeFileSync } = require('fs')</pre>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "149862f6-6164-430d-935e-bd20e8d8e7bd",
+    "category": "backend-javascript",
+    "question": "Was bewirkt die Methode <code>app.set()</code> in Express?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 2,
+        "answerText": "Mit manchen vorreservierten Keys kann Express durch Key-Value-Paare konfiguriert werden.",
+        "isCorrect": true
+      },
+      {
+        "id": 1,
+        "answerText": "Mit der Methode <code>app.set()</code> kann ich eine Middleware für eine bestimmte Route festlegen.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Mit der Methode <code>app.set()</code> kann ich die IP-Adresse des Servers festlegen.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Mit der Methode <code>app.set()</code> kann ich beliebige Key-Value-Paare abspeichern.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "edc091b2-e04c-4fde-9316-c25445a0bf7a",
+    "category": "backend-javascript",
+    "question": "Über welches Attribut des Request-Objekts erhältst du Zugriff auf die Route-Parameter?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Über das Attribut <code>parameter</code>.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Über das Attribut <code>params</code>.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Über gar keins, ich muss die Methode <code>getParams()</code> verwenden.\n",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Über das Attribute <code>routeParams</code>.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "83d6b07b-1966-44bf-adb3-45effd76a73a",
+    "category": "backend-javascript",
+    "question": "Welche Aussagen über REST sind korrekt?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "REST beschreibt einen Style der Softwarearchitektur. Vereinfacht gesagt, ist REST ein Bauplan für Software.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "REST sieht einen zustandslosen Server vor, der keine Informationen über die Kommunikation mit dem Client speichert.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Ein REST-Server besitzt keine konkreten Schnittstellen, er verarbeitet Client-Anfragen abhängig von den übergebenen Parametern.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "REST steht für: REpresentational State Transfer",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a0cf810e-7e24-469f-845e-97d8b445eff0",
+    "category": "backend-javascript",
+    "question": "Wie definierst du korrekt einen Router?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>const express = require('express')\n\nconst router = express.Router()\n\nmodule.exports = router</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>const express = require('express')\n\nconst router = express.router()\n\nmodule.exports = router</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>const { router } = require('express-router')\n\nmodule.exports = router</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>const { router } = require('express')\n\nconst router = router()\n\nmodule.exports = router</pre>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "557fdba2-1718-4752-a316-1c1ce8142336",
+    "category": "backend-javascript",
+    "question": "Mit welcher Methode des Response-Objekts kannst du einen Client auf eine andere Seite weiterleiten?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Mit der Methode <code>continue()</code>.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Mit der Methode <code>redirect()</code>.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Mit der Methode <code>forward()</code>.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Mit gar keiner, ich muss das <code>url</code>-Attribut mit der URL der neuen Seite überschreiben.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "34ec8b4d-f9df-44c7-b9de-57e2ab963913",
+    "category": "backend-javascript",
+    "question": "Welche Aussagen über AJAX sind korrekt?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "AJAX akzeptiert ausschließlich XML als Sprache zur Datenübertragung.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "AJAX ist ein Programmierstandard, durch welchen Inhalte einer Website asynchron und ohne Neuladen der Seite geändert werden können.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "AJAX steht für: <strong>A</strong>synchronous <strong>J</strong>avaScript<strong>A</strong>nd <strong>X</strong>ML",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "AJAX sieht vor, dass ein Client die erhaltene Website rendert, das zugehörige JavaScript ausführt und durch dieses mit dem Server Kontakt aufnimmt. Der Server kann dann nachträglich weitere Informationen an den Client senden. Dieser kann wiederum die zusätzlichen Informationen über Manipulation des DOMs nachträglich zur Website ergänzen.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "9326bdcc-676a-46e4-8604-04ea72d2c307",
+    "category": "backend-javascript",
+    "question": "Wie erstellst du eine Datenbank in der MongoDB-Shell?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Mit der Anweisung: <code>db.create([database-name])</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Indem ich mit der Anweisung <code>use [database-name]</code> die neu zu erstellende Datenbank auswähle und anschließend ein Document erstelle.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Indem ich mit der Anweisung <code>db.from [filename]</code> eine Datei einlese, auf Grundlage welcher ich eine neue Datenbank anlegen möchte.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Mit der Anweisung: <code>new [database-name]</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "34840b16-a9bc-4cb5-8dcc-8a9d61ab7b42",
+    "category": "backend-javascript",
+    "question": "Wie änderst du den Namen eines existierenden Nutzers?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>db.users.change({ name: { $from: \"Lisa\", $to: \"Laura\" }})</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>db.users.updateOne({ name: { $regex: \"Dave\" }}, { $set: { name: \"Peter\"}})</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>db.users.change({ name: { $regex: \"Till\" }}, { name: \"Frank\"})</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>db.users.updateMany({ name: { $regex: \"Jill\" }}, { $set: { name: \"Megan\"}})</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d6d1d679-215c-4542-9535-faa9a9149105",
+    "category": "backend-javascript",
+    "question": "Welche Anweisung findet alle Nutzer mit dem Teilstring <code>mann</code> in ihrem Namen?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>db.users.get({ name: { $regex: /mann/ }})</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>db.users.find({ name: { $regex: /mann/ }})</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>db.users.select({ name: { $includes: 'mann' }})</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>db.users({ name: { $regex: /mann/ }})</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "37d3036b-9ef8-4c45-836c-4424c9f25c84",
+    "category": "backend-javascript",
+    "question": "Welche Codebeispiele zeigen eine korrekte Verwendung von Promises?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>const promise = new Promise((resolve, reject) => {\n   return resolve('success')\n   return resolve('fail')\n})\n\npromise.catch((err) => {\n   console.log(err)\n})</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>new Promise((resolve, reject) => {\n   if (4 < 2) {\n    reject('your math is broken')\n   }\n   resolve('success')\n   }).then((result) => {\n   console.log(result)\n   return result\n   }).then((result) => {\n   return\n   }).catch((error) => {\n   console.log(error)\n})</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>const promise = new Promise((resolve, reject) => {\n   resolve('success')\n})\n\npromise.then((result) => {\n   console.log(result)\n}).finally(() => {\n   console.log('done')\n}).catch((err) => {\n   console.log(err)\n})</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>const promise = new Promise((resolve, reject) => {\n   resolve('success')\n})\n\npromise.then((result) => {\n   console.log(result)\n})</pre>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "67bbc23f-4531-4e9d-956f-cb79f7db152c",
+    "category": "backend-javascript",
+    "question": "Mit welcher Methode kannst du auf fehlgeschlagene Promises reagieren?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>catch()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>handle()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>error()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>resolve()</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "b7575dc0-05b7-404d-8030-b41c275a56a5",
+    "category": "backend-javascript",
+    "question": "Mit welcher Methode kannst du ein Document löschen?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>delete()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>deleteMany()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>deleteOne()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<code>remove()</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "8e5fd957-1d02-46d2-b2f6-02d3d2f6268d",
+    "category": "backend-javascript",
+    "question": "Wie erstellst du korrekt ein vollständiges Model mit Mongoose?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>const { Schema, model } = require('mongoose')\n   const user = new Schema({\n      userId: String,\n})\n\nmodule.exports = model('User', user)</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>const { Schema, model } = require('mongoose')\n   const userSchema = new Schema({\n      userId: {\n         type: String,\n      },\n      friends: {\n         model: 'User'\n      }\n})\n\nmodule.exports = model(userSchema, 'User')</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>const { schema, model } = require('mongoose')\n   const userSchema = new Schema({\n      userId: String,\n      friends: 'User'\n})\n\nmodule.exports = model('User', userSchema)</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>const { Schema, model, SchemaTypes } = require('mongoose')\n   const userSchema = new Schema({\n      userId: {\n         type: String,\n         immutable: true,\n      },\n      friends: [\n          {\n             type: SchemaTypes.ObjectId,\n             ref: 'User',\n          },\n      ],\n})\n\nmodule.exports = model('User', userSchema)</pre>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "008344d0-5e69-48ee-b7a1-6913610f1cf8",
+    "category": "backend-javascript",
+    "question": "Welches Codebeispiel zeigt die korrekte Verwendung einer Datenbank-Middleware mit Mongoose?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<pre>userSchema.pre('deleteOne', { document: true, query: false }, function (next) {\n   console.log(this)\n   next()\n})</pre>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<pre>userSchema.pre('deleteOne', true, false, function (next) {\n   console.log(this)\n   next()\n})</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<pre>userSchema.validate('delete', function (next) {\n   console.log(this)\n   next()\n})</pre>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<pre>userSchema.post(['deleteOne', 'deleteMany'], { document: true, query: false }, function (next) {\n   console.log(this)\n   next()\n})</pre>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d3e7b7c0-4455-4f0f-917c-2df381dd7c45",
+    "category": "backend-javascript",
+    "question": "Wie kannst du Werte in allen EJS-Templates verfügbar machen, ohne sie beim Rendern eines Templates explizit zu übergeben?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Indem ich der Methode <code>app.set()</code> in der app.js-Datei Key-Value-Paare übergebe.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Gar nicht, ich kann Werte nur für eine bestimmte View als zweiten Parameter beim Aufruf der <code>res.render()</code>-Methode übergeben.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Indem ich das <code>app.locals</code>-Objekt in der app.js-Datei mit Key-Value-Paaren belege.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Indem ich eine Variable in der app.js-Datei mit dem Express-Keyword <code>global</code> erstelle.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "130d5cc8-6a94-4b1e-af5a-1e86f2a59b09",
+    "category": "backend-javascript",
+    "question": "Welches ist <strong>kein</strong> valides ejs-Tag?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code><%/</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code><%%</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code><%_</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code><%#</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "07abd8cd-d2d1-426e-884b-0f2dce51309b",
+    "category": "backend-javascript",
+    "question": "Wie konvertierst du eine über die fetch-API erhaltene JSON-Response in ein JavaScript-Objekt?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Indem ich die <code>javascript()</code>-Methode der Response aufrufe.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Indem ich die <code>format()</code>-Methode der Response aufrufe und als Parameter den String <code>'JavaScript'</code> übergebe.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Indem ich die <code>json()</code>-Methode der Response aufrufe.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Gar nicht, ich muss beim Senden des Request im Konfigurationsobjekt den Key <code>format</code> mit dem Value <code>'JavaScript'</code> belegen.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "2244029b-a8f6-4572-8a58-d9952e6e7d12",
+    "category": "backend-javascript",
+    "question": "Wie bindest du andere EJS-Dateien in deine aktuelle ejs-Datei ein?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Mit dem <code><%include</code>-Tag.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Mit dem <code><%ejs</code>-Tag.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Mit einer Kombination aus <code><%%</code>-Tag und <code>ejs()</code>-Funktion.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Mit einer Kombination aus <code><%--</code>Tag und <code>include()</code>-Funktion.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "63360b41-e657-462f-a184-b1b993eee1e3",
+    "category": "backend-javascript",
+    "question": "Welche Aussage über die Verwendung von JWTs zur Nutzerauthentifizierung sind korrekt?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "JWTs werden beim Verlassen einer Website automatisch gelöscht.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Ein JWT leitet eine Nutzersession ein.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "JWTs bestehen aus einem Datensatz und einem geheimen Zusatz.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Jeder, der Zugriff auf einen JWT hat, kann sich als der zugehörige Nutzer ausgeben.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "583119f5-856c-43b9-8ff9-47d445910bfa",
+    "category": "backend-javascript",
+    "question": "Welche Aussage über Hashs und das Hashing sind korrekt?",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Eine Hashfunktion liefert bei gleichen Parametern immer das gleiche Ergebnis.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Ein Hash kann nur mit dem korrekten Key ausgelesen werden.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Eine Hashfunktion kann Hashs nur erzeugen, sie aber nicht wieder rückgängig machen.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Ein Hash ist das Ergebnis einer Hashfunktion.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "93c57635-1007-4cb6-85a7-21fdc6adb07b",
+    "category": "backend-javascript",
+    "question": "Wie kannst du mehrere Middlewares für eine Route festlegen?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Indem ich der <code>app.use()</code>-Methode den zu überwachenden Endpoint und ein Array mit allen Middlewares übergebe.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Indem ich sie nacheinander und durch Kommata getrennt bei der Route-Definition übergebe.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Indem ich der <code>app.middleware()</code>-Methode den zu überwachenden Endpoint und ein Array mit allen Middlewares übergebe.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Indem ich die Middlewares in einem Array als zweiten Parameter bei der Route-Definition übergebe.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e43ea04b-53bc-48bf-a426-d16d24dca7fc",
+    "category": "backend-javascript",
+    "question": "Welche Aussagen zu WebSockets sind korrekt?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Socket.IO ist eine beliebte Bibliothek, die das WebSocket-Protokoll implementiert.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Socket.IO ist ein Webserver.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Das WebSocket-Protokoll verwendet denselben Port wie das HTTP-Protokoll.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Um WebSockets verwenden zu können, muss im Webbrowser das WebSockets-Plugin von Google installiert sein.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d1722b97-b9b8-4c18-8906-39efaa1045ff",
+    "category": "backend-javascript",
+    "question": "Welcher Satz beschreibt Socket.IO am besten?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Socket.IO ist ein Plugin, das es erlaubt, in Echtzeit mit dem Webserver zu kommunizieren.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Socket.IO ist ein Webserver, der es erlaubt, in Echtzeit mit dem Webbrowser zu kommunizieren.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Socket.IO ist ein Standard, der bidirektionale Echtzeit-Kommunikation zwischen Server und Webbrowser ermöglicht.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Socket.IO ist eine JavaScript-Bibliothek, die das WebSocket-Protokoll implementiert.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "20b33725-3a3a-4e9c-bf5f-738c1ac3d29c",
+    "category": "backend-javascript",
+    "question": "Mit welcher Methode sendet man ein Event mit Socket.IO",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "mit <code>emit()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "mit <code>eject()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "mit <code>push()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "mit <code>send()</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d8447c3f-ee76-4e39-afb9-b0e3838614df",
+    "category": "backend-javascript",
+    "question": "Paradebeispiele für den Einsatz von WebSockets sind?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Chat-Anwendungen.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Das Erstellen von REST-Schnittstellen.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Formularvalidierungen in Eingabemasken.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Mehrbenutzer-Spiele mit Echtzeit-Kommunikation.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d4d6ff1b-2ca3-42e4-b0fb-99476c90a6ea",
+    "category": "phaser-game-development",
+    "question": "Was ist ein Game Object in Phaser?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Ein Game Object ist ein Teilsystem des Frameworks.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Ein Game Object erlaubt, mit Spielelementen zu interagieren.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Ein Game Object ist die Instanz eines Elements.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Ein Game Object ist die Instanz eines Spiels.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "f62216d9-c901-4e2c-bbda-9c2eecd532d0",
+    "category": "phaser-game-development",
+    "question": "Was versteht man unter Rendering?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Beim Rendering handelt es sich um eine Methode, mit der die Performance gesteigert werden kann.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Das Rendering beschreibt den Prozess der Anpassung eines Spiels an mobile Endgeräte.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Das Rendering beschreibt den Prozess der Darstellung von Grafiken auf dem Bildschirm.",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "Beim Rendering werden Grafiken komprimiert, damit sie schneller dargestellt werden können.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "edc51e69-4880-4d1b-a054-7ebef2d8c826",
+    "category": "phaser-game-development",
+    "question": "Was für ein Webserver wird für die Entwicklung eines Spiels empfohlen?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Es wird ein PHP- oder Python-Webserver empfohlen.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Es wird kein spezieller Webserver empfohlen, Phaser ist mit allen aktuellen Webservern kompatibel.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Für die Entwicklung wird noch kein Webserver benötigt, erst für das spätere Hosting.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Es wird ein WAMP- oder MAMP-Webserver empfohlen.",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "1aefb433-59e0-4b43-a4e4-e97838ece4bc",
+    "category": "phaser-game-development",
+    "question": "Welcher Funktionsaufruf platziert ein Hintergrundbild so, dass die linke obere Ecke des Bildes im Koordinatenursprung liegt? Es existiert ein Object config, das Höhe (height) und Breite (width) des Spielfensters als Attribute speichert.",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.add.image(0, 0, 'background').setOrigin(0, 0)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.add.image(width/2, height/2, 'background')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.add.image(-width, -height, 'background')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>this.add.image(config.width/2, config.height/2, 'background')</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "f006aa71-193d-4832-a629-50ab67ec963d",
+    "category": "phaser-game-development",
+    "question": "Welcher Code lädt eine PNG-Datei mit dem Namen <code>Spieler</code> korrekt?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.load.image('spieler_sprite', 'assets/Spieler.png')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.add.image('spieler_sprite', 'assets/Spieler.png')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.add.image('spieler_sprite', 'assets/Spieler')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>this.load.image('spieler_sprite', 'assets/Spieler')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "0dbe0f7f-bfb3-4803-8cf8-e67c096643dd",
+    "category": "phaser-game-development",
+    "question": "Gegeben sind die Game Objects player und sword. Welcher Code erstellt einen Collider, der Kollisionen wahrnimmt und das Attribut health des Spielers verringert?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.physics.add.collider(this.player, this.sword, (player) => { player.health -= 10 })</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.add.collider(this.player, this.sword, (player) => { player.health -= 10 })</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.physics.add.collider(this.player, this.sword, (player) => { player -= 10 })</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>this.add.collider(this.player, this.sword, (player) => { player-= 10 })</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "d022ca61-fba6-4e08-9109-ed52b3dc77d0",
+    "category": "phaser-game-development",
+    "question": "Welcher Code erstellt ein Sprite Game Object, das auf die Physik des Spiels reagiert? Es soll an der Position 100, 100 erstellt werden und ein Bild mit dem Key player zur Darstellung verwenden.",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.physics.add.sprite(100, 100, 'player')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.physics.add.sprite('player', 100, 100)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>physics.add.sprite(100, 100, 'player')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "0a8a3afb-88cc-437c-aa7b-59bbecfa0f17",
+    "category": "phaser-game-development",
+    "question": "Welcher Code erstellt eine dynamische Gruppe?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.physics.add.group()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.physics.add.dynamicGroup()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>physics.add.group()</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "5cfe534a-3a0e-42db-a725-607ec715d80a",
+    "category": "phaser-game-development",
+    "question": "Gegeben sei die Gruppe enemies. Welcher Code iteriert über jedes Element dieser Gruppe und setzt das Attribut active auf false?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.enemies.children.iterate(enemy => enemy.active = false)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.enemies.iterate(enemy => enemy.active = false)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.enemies.children.iterate(enemy => enemy = false)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "47636ef0-776f-4664-a7db-6d9a56497853",
+    "category": "phaser-game-development",
+    "question": "Wie unterscheiden sich in Phaser dynamische Game Objects von statischen Game Objects?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Dynamische Game Objects verändern im Laufe des Spiels ihre Größe, statische Game Objects behalten ihre Größe.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Der Body von dynamischen Game Objects wird lila gezeichnet, der von statischen Game Objects blau.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Dynamische Game Objects können während des Spiels zerstört werden, statische Game Objects sind unzerstörbar.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Dynamische Game Objects sind solche, die sich während des Spiels bewegen. Statische Game Objects bleiben starr an ihrer Position.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "fcdc9357-365c-4b42-9b2e-590929a1ab06",
+    "category": "phaser-game-development",
+    "question": "Mit welcher Funktion kannst du dafür sorgen, dass die Kamera einem Game Object folgt?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.cameras[0].startFollow()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.mainCamera.follow()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.camera.startFollow()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>this.cameras.main.startFollow()</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "4e314b37-c5be-4ebd-92c7-03d79ee48d6e",
+    "category": "phaser-game-development",
+    "question": "Welche Funktionen starten die Bewegung eines Game Objects?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>moveToPosition()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>setVelocityX()</code> und <code>setVelocityY()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>goTo()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>moveX()</code> und <code>moveY()</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "44d6a915-1f20-4516-8cac-eda047da4594",
+    "category": "phaser-game-development",
+    "question": "Welche Aussage ist in Bezug auf Animationen in Phaser korrekt?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Animationen sind in Phaser nicht an ein Game Object gebunden.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Möchtest du in Phaser Animationen verwenden, dann musst du vorgefertigte Animationen laden.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Animationen können nur mit Spritesheets erstellt werden.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Während einer Animation wird das eigentliche Game Object nicht bewegt, lediglich der Sprite ändert sich.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "6bb3564e-9bf9-43bb-9a84-d9b0a2206215",
+    "category": "phaser-game-development",
+    "question": "Mit welchem Code kannst du die Distanz zwischen zwei Game Objects bestimmen, die beide die gleiche y-Koordinate besitzen.",
+    "correctAnswerCount": 3,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>Math.abs(obj1.x - obj2.x)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>Math.abs(obj1.body.x - obj2.body.x)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>obj1.center.distance(obj2.center)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>obj1.body.center.distance(obj2.body.center)</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "1f54f0d4-53fa-4283-834a-787a1d7421c5",
+    "category": "phaser-game-development",
+    "question": "Welcher Code berechnet eine Zahl zwischen einschließlich 1 und einschließlich 10?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>Phaser.Math.Between(1, 10)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>Phaser.Math.Between(0, 10)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>Phaser.Math.Between(1, 11)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "b7e2f68d-9ab3-4a60-aa2d-23005408a772",
+    "category": "phaser-game-development",
+    "question": "Welcher Code deklariert die Klasse für eine eigene neue Szene mit dem Namen MainScene?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>class MainScene extends Phaser.Scene</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>class MainScene extends Phaser</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>class MainScene extend Phaser.Scene</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a116b984-dbfe-47f3-8fcb-686e114eb8ed",
+    "category": "phaser-game-development",
+    "question": "Welcher Code \"zerstört\" das Spiel?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.game.destroy()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.gameInstance.destroy()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.game.delete()</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "a250e951-8dae-4b95-91dc-c0da98fd8909",
+    "category": "phaser-game-development",
+    "question": "Welcher Code startet die Szene MainScene?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.scene.start('MainScene')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.scene.startScene('MainScene')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.scene.new('MainScene')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "c5d1c944-28ea-4871-aba7-51d24b85ce9f",
+    "category": "phaser-game-development",
+    "question": "Welcher Code passt den Value des Keys <code>scene</code> der gegebenen Szenenkonfiguration so an, dass nach der <code>MainScene</code> noch eine <code>SettingsScene</code> geladen wird?\n<pre>const config = {\n   type: Phaser.WEBGL,\n   width: 1920,\n   height: 1080,\n   physics: {\n      default: 'arcade',\n      arcade: {\n         gravity: 200,\n      },\n   },\n   scene: new MainScene(),\n}</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>scene: [new MainScene(), new SettingsScene()],</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>scene: [new SettingsScene(), new MainScene()],</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>scene: [new MainScene(), SettingsScene()],</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "31600b7e-fb73-4411-8933-80f966b6c61c",
+    "category": "phaser-game-development",
+    "question": "Die Szene MainScene wurde mit der Funktion <code>this.scene.pause()</code> pausiert. Welcher Code setzt die Szene wieder fort?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.scene.resume()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.scene.restart()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.scene.play()</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "b997fb31-4ab7-403a-b0cd-e42684596f77",
+    "category": "phaser-game-development",
+    "question": "Welcher Code ergänzt das <code>data</code>-Objekt mit dem Wert <code>3</code> vom Datentyp Integer für das Attribut <code>lives</code> und gibt es an die Szene GameScene weiter?.",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.scene.start('GameScene', { lives: 3 })</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.start('GameScene', { lives: 3 })</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.scene.start({ lives: 3 }, 'GameScene')</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "29a5a4d0-7bc0-4bb4-b30b-6c585de39c5a",
+    "category": "phaser-game-development",
+    "question": "In welchen Funktionen kannst du auf das <code>data</code>-Objekt der Funktionen des SceneManagers zugreifen?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>init()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>create()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>update()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>preload()</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "b9676aa8-6a11-456a-8839-ec9aa9ed8127",
+    "category": "phaser-game-development",
+    "question": "Wo kannst du auf geladene Assets zugreifen?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Überall innerhalb der Szene, in der sie geladen wurden.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "Nur in der Szene, in der sie geladen wurden.",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "Nur in der <code>create()</code>-Funktion, allerdings in jeder Szene.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Überall in jeder Szene.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "09de6b9e-84f6-46a9-b16e-cb00cd7bd08f",
+    "category": "phaser-game-development",
+    "question": "Wie lautet die Funktion, um einen neuen Tween zu erstellen?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.tweens.add()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.tweens.create()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.tween.add()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>this.tween.create)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "2f846565-a655-4605-9fd1-6ff005dc82ef",
+    "category": "phaser-game-development",
+    "question": "Mit welchem Code können Sounddateien korrekt geladen werden?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.load.audio('hit', { wav: 'assets/sounds/hit.wav', mp3: 'assets/sounds/hit.mp3', ogg: 'assets/sounds/hit.ogg', })</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.load.sound('hit', 'assets/sounds/hit.mp3')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.load.audio('hit', [ 'assets/sounds/hit.wav', 'assets/sounds/hit.mp3', 'assets/sounds/hit.ogg', ])</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<code>this.load.audio('hit', 'assets/sounds/hit.wav')</code>",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "0e122c47-ec6e-425f-b7f9-ff9522317f1d",
+    "category": "phaser-game-development",
+    "question": "Was versteht man in der Spieleentwicklung unter Playtesting?",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "Das Schreiben von Tests.",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "Unter Playtesting versteht man das Abstandnehmen vom Code und Betrachten des eigentlichen Spiels.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "Beim Playtesting wird lediglich geprüft, ob das Spiel unterhaltsam ist.",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "Das Spielen des Spiels mit dem Ziel, Fehler zu finden.",
+        "isCorrect": true
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    }
+  },
+  {
+    "id": "e24a6206-dacc-479d-9625-e09b4e4e0d36",
+    "category": "phaser-game-development",
+    "question": "Welcher Code erstellt ein Grafikobjekt?",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>this.graphicsObject = this.add.graphics()</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>this.graphicsObject = graphics()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>this.graphicsObject = this.add.createGraphics()</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>this.graphicsObject = this.graphics()</code>",
         "isCorrect": false
       }
     ],
