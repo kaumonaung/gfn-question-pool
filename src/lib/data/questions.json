@@ -4845,7 +4845,7 @@
       },
       {
         "id": 2,
-        "answerText": "<pre>abstract class Car {\n    constructor(brand) {\n      if (new.target === Car) {\n          throw new TypeError('Car is an abstract class and cannot be instantiated')\n      }\n      if (this.drive === undefined || typeof this.drive !== 'function') {\n          throw new TypeError('Abstract method drive must be declared')\n      }\n      this.brand = brand\n    }\n}</pre>",
+        "answerText": "<pre>const data = {\n    brands: ['Audi', 'BMW', 'Mercedes', 'VW'],\n}\n\nfunction listBrands() {\n   console.log(this.brands.join(', '))\n}\n\nlistBrands.call(data)</pre>",
         "isCorrect": true
       },
       {
