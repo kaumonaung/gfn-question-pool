@@ -3989,6 +3989,158 @@
     "question": "Bestimme den Inhalt von <code>a</code> und <code>b</code> nach dem Ausführen der folgenden Anweisung: <code>const [b, a] = [3, 2, 1]</code>"
   },
   {
+    "category": "javascript-dom",
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "id": "d9615692-93a1-472a-9f9d-649096f99901",
+    "question": "Bestimme den Rückgabewert von folgendem Ausdruck: <code>document.querySelectorAll('div img').length</code>\n<div>zu folgendem HTML-Codeschnipsel:</div>\n\n<pre>&lt;div&gt;\n  &lt;img src=“x.png”&gt;\n  &lt;span&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;\n  &lt;span&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;\n  &lt;ul&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;bar&lt;/em&gt;&lt;/span&gt;&lt;img src=“x.png” /&gt;&lt;/li&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;bar&lt;/em&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/div&gt;</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": 5,
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": 1,
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": 3,
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": 4,
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": 0,
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "javascript-dom",
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "id": "0cd35f76-f996-4a25-9d00-bf8937dd9943",
+    "question": "Bestimme den Rückgabewert von folgendem Ausdruck: <code>document.querySelectorAll('.span img').length</code>\n<div>zu folgendem HTML-Fragment:</div>\n\n<pre>&lt;div&gt;\n  &lt;img src=“x.png”&gt;\n  &lt;span&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;\n  &lt;span&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;\n  &lt;ul&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;bar&lt;/em&gt;&lt;/span&gt;&lt;img src=“x.png” /&gt;&lt;/li&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;bar&lt;/em&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/div&gt;</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": 5,
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": 1,
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": 3,
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": 4,
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": 0,
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "category": "javascript-dom",
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "id": "44fc919a-e1f0-4432-b02d-dc48c378674f",
+    "question": "Welches sind geeignete Selektoren, um nur das erste Bild des nachfolgenden HTML-Fragments zu finden?\n\n<pre>&lt;body&gt;\n   &lt;img src=“gifs/heat_change_mug_a.gif” alt=“Heat Changing Mug – Model A” /&gt;\n   &lt;img src=“gifs/heat_change_mug_b.gif” alt=“Heat Changing Mug – Model B” /&gt;\n   &lt;img src=“gifs/heat_change_mug_c.gif” alt=“Heat Changing Mug – Model C” /&gt;\n&lt;/body&gt;\n</pre>",
+    "correctAnswerCount": 2,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelectorAll('img[src$=gif]')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelector('img[src$=gif]')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelector('img[src^=gif]')</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": "<code>document.querySelectorAll('img[gif]')</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": "<code>document.querySelectorAll('img[src^=gif]')</code>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "category": "javascript-dom",
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "id": "6d9dc923-3842-4120-9fbe-0da5caca5797",
+    "question": "Bestimme den Rückgabewert von folgendem Ausdruck: <code>document.querySelectorAll('span > img').length</code>\n<div>zu folgendem HTML-Codeschnipsel:</div>\n\n<pre>&lt;div&gt;\n  &lt;img src=“x.png”&gt;\n  &lt;span&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;\n  &lt;span&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;\n  &lt;ul&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/span&gt;&lt;/li&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;bar&lt;/em&gt;&lt;/span&gt;&lt;img src=“x.png” /&gt;&lt;/li&gt;\n     &lt;li&gt;&lt;span&gt;&lt;em&gt;bar&lt;/em&gt;&lt;img src=“x.png” /&gt;&lt;/span&gt;&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/div&gt;</pre>",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": 5,
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": 1,
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": 3,
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "answerText": 4,
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "answerText": 0,
+        "isCorrect": false
+      }
+    ]
+  },
+  {
     "id": "42939fb7-9550-4d56-aa16-daa24b628789",
     "category": "javascript-dom",
     "correctAnswerCount": 1,
@@ -4118,7 +4270,40 @@
       "timesCorrect": 0,
       "timesIncorrect": 0
     },
-    "question": "Ordne allen div-Elementen die CSS-Klasse <code>foo</code> zu ohne Verwendung der <code>$</code > bzw. < code >$$</code >-Funktion."
+    "question": "Ordne allen div-Elementen die CSS-Klasse <code>foo</code> zu ohne Verwendung der $ bzw. $$-Funktion."
+  },
+  {
+    "id": "7340be9b-e891-46dc-af90-890fd0f404b8",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>document.querySelector('p.person').classList.item(1)</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>document.querySelector('p.special').classList.item(0)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>document.querySelector('p.person').classList.item(2)</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "answerText": "<code>document.querySelector('p.very').classList.item(2)</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Gegeben ist folgendes HTML-Fragment: <code>&lt;p class=\"very special person\"&gt;Anna&lt;/p&gt;</code><div>Ermittle die CSS-Klasse <code>special</code> vom p-Element der CSS-Klasse <code>person</code>.</div>"
   },
   {
     "id": "72c2c828-f714-4043-90ff-a001f7ea9e8f",
@@ -4127,22 +4312,22 @@
     "answers": [
       {
         "id": 1,
-        "answerText": "<code><script src=\"main.js\" async=\"async\" /></code>",
+        "answerText": "<code>&lt;script src=\"main.js\" async=\"async\" /&gt;</code>",
         "isCorrect": true
       },
       {
         "id": 2,
-        "answerText": "<code><script src=\"main.js\" async /></code>",
+        "answerText": "<code>&lt;script src=\"main.js\" async /&gt;</code>",
         "isCorrect": true
       },
       {
         "id": 3,
-        "answerText": "<code><script src=\"main.js\" defer /></code>",
+        "answerText": "<code>&lt;script src=\"main.js\" defer /&gt;</code>",
         "isCorrect": false
       },
       {
         "id": 4,
-        "answerText": "<code><script src=\"main.js\" defer=\"defer\" /></code>",
+        "answerText": "<code>&lt;script src=\"main.js\" defer=\"defer\" /&gt;</code>",
         "isCorrect": false
       }
     ],
@@ -4347,6 +4532,118 @@
     "question": "Der Button mit der ID <code>'my_button'</code> ist ausgegraut/deaktiviert (disabled). Aktiviere den Button wieder! Es gibt mehrere Möglichkeiten."
   },
   {
+    "id": "5b1bdfa2-0601-4b84-812b-0dfbcb11653d",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": 5,
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": 6,
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "undefined",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "In einem HTML-Element gibt es folgenden Fortschrittsbalken: <code>&lt;progress id=\"my_progress\" value=\"4\" max=\"5\"&gt;&lt;/progress&gt;</code><div>Welchen Wert gibt folgender Ausdruck zurück, wenn er im Kontext des angegebenen HTML-Arguments aufgerufen wird?</div><div><code>document.querySelector('#my_progress').max + 1</code></div>"
+  },
+  {
+    "id": "90521925-ca74-4071-8eeb-a83901044616",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": 41,
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "'41'",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": 5,
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "In einem HTML-Element gibt es folgenden Fortschrittsbalken: <code>&lt;progress id=\"my_progress\" value=\"4\" max=\"5\"&gt;&lt;/progress&gt;</code><div>Welchen Wert gibt folgender Ausdruck zurück, wenn er im Kontext des angegebenen HTML-Arguments aufgerufen wird?</div><div><code>document.querySelector('#my_progress').getAttribute('value') + 1</code></div>"
+  },
+  {
+    "id": "1ad83ae4-dfab-43c2-919a-04fc51b23976",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "object",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Gegeben ist folgender HTML-Codeschnipsel: <code>&lt;ol start=\"3\"&gt;&lt;li /&gt;&lt;/ol&gt;</code>. Welchen Typ hat der Rückgabewert des folgenden Ausdrucks?\n<div><code>document.querySelector('ol').start</code></div>"
+  },
+  {
+    "id": "b37161b0-3258-4331-b877-c063d248d334",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "number",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "answerText": "string",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answerText": "object",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Gegeben ist folgender HTML-Codeschnipsel: <code>&lt;ol start=\"3\"&gt;&lt;li /&gt;&lt;/ol&gt;</code>. Welchen Typ hat der Rückgabewert des folgenden Ausdrucks?\n<div><code>document.querySelector('ol').getAttribute('start')</code></div>"
+  },
+  {
     "id": "5fd40685-74f9-43ba-ae16-0c6448d25e46",
     "category": "javascript-dom",
     "correctAnswerCount": 1,
@@ -4426,6 +4723,39 @@
     "question": "Welchen Datentyp hat ein <code>dataset</code>?"
   },
   {
+    "id": "e86d770b-dcaf-452f-9a92-be843f003869",
+    "category": "javascript-dom",
+    "correctAnswerCount": 1,
+    "answers": [
+      {
+        "id": 1,
+        "answerText": "<code>&lt;span class=\"price\" data-currency=\"Euro\"&gt;100&lt;/span&gt;</code>",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answerText": "<code>&lt;span class=\"price\" \"data-currency\"=\"Euro\"&gt;100&lt;/span&gt;</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>&lt;span class=\"price\" data-currency=\"euro\"&gt;100&lt;/span&gt;</code>",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "answerText": "<code>&lt;span class=\"price\" dataCurrency=\"Euro\"&gt;100&lt;/span&gt;</code>",
+        "isCorrect": false
+      }
+    ],
+    "meta": {
+      "timesAnswered": 0,
+      "timesCorrect": 0,
+      "timesIncorrect": 0
+    },
+    "question": "Die Währung <code>Euro</code> eines Geldbetrags soll unter <code>currency</code> aus einem dataset abrufbar sein. Welcher Ausdruck ist korrekt?"
+  },
+  {
     "id": "5d9a6180-182f-45fb-8b2c-bf352e6e5844",
     "category": "javascript-dom",
     "correctAnswerCount": 1,
@@ -4460,7 +4790,7 @@
       },
       {
         "id": 2,
-        "answerText": "<pre>const br = document.createElement('<br>')\ndocument.body.appendChild(br)</pre>",
+        "answerText": "<pre>const br = document.createElement('&lt;br&gt;')\ndocument.body.appendChild(br)</pre>",
         "isCorrect": false
       },
       {
@@ -5713,7 +6043,7 @@
       },
       {
         "id": 4,
-        "answerText": "Mit einer Kombination aus <code><%--</code>Tag und <code>include()</code>-Funktion.",
+        "answerText": "Mit einer Kombination aus <code><%-</code>Tag und <code>include()</code>-Funktion.",
         "isCorrect": true
       }
     ],
