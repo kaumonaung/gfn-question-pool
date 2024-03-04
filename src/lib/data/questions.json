@@ -4741,11 +4741,6 @@
         "id": 3,
         "answerText": "<code>&lt;span class=\"price\" data-currency=\"euro\"&gt;100&lt;/span&gt;</code>",
         "isCorrect": false
-      },
-      {
-        "id": 3,
-        "answerText": "<code>&lt;span class=\"price\" dataCurrency=\"Euro\"&gt;100&lt;/span&gt;</code>",
-        "isCorrect": false
       }
     ],
     "meta": {
