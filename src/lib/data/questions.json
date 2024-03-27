@@ -764,7 +764,7 @@
       {
         "id": 1,
         "answerText": "NaN",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": 2,
@@ -774,7 +774,7 @@
       {
         "id": 3,
         "answerText": "number",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": 4,
@@ -1028,12 +1028,12 @@
       {
         "id": 1,
         "answerText": "number",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": 2,
         "answerText": "NaN",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": 3,
@@ -2889,12 +2889,12 @@
       {
         "id": 1,
         "answerText": "JAVASCRIPT",
-        "isCorrect": true
+        "isCorrect": false
       },
       {
         "id": 2,
         "answerText": "javascript",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "id": 3,
